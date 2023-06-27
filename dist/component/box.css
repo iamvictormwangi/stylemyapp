@@ -1,0 +1,21 @@
+.box {
+  width: 100%;
+  min-height: 3rem;
+}
+.box .box-content {
+  padding: 1rem 0.8rem;
+}
+.box .box-content .box-img, .box .box-content .box-thumb, .box .box-content .box-video {
+  width: 100%;
+  height: auto;
+}
+
+.box-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: relative;
+}
+.box-group .box-group-item {
+  margin: 0;
+}

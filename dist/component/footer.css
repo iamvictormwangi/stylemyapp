@@ -1,0 +1,16 @@
+.footer.footer-sticked-top {
+  position: sticky !important;
+  top: 0 !important;
+  width: 100%;
+}
+.footer.footer-fixed-top {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+.footer .footer-content {
+  padding: 0.15rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -1,0 +1,55 @@
+table, .table {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-spacing: 0;
+}
+table caption, .table caption {
+  padding: 0.5rem 0rem;
+}
+table thead th, .table thead th {
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-spacing: 0;
+  text-align: left;
+}
+table tr, .table tr {
+  margin-bottom: 0.5rem;
+  border: none;
+  border-spacing: 0;
+}
+table tr th:not(last-child), table tr td:not(last-child), .table tr th:not(last-child), .table tr td:not(last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  vertical-align: inherit;
+}
+table tr tr:last-child th, .table tr tr:last-child th {
+  border-bottom: 0;
+}
+table tr tr:last-child tr, .table tr tr:last-child tr {
+  border-bottom: 0;
+}
+table td, .table td {
+  border: none;
+}
+table tfoot tr, .table tfoot tr {
+  text-align: left;
+  border-spacing: 0;
+}
+table tfoot td, .table tfoot td {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 4px;
+}
+table:last-child, .table:last-child {
+  border-bottom: 0;
+}
+table tr:hover, .table tr:hover {
+  opacity: 90%;
+}
+table.table-striped tr:nth-of-type(odd), .table.table-striped tr:nth-of-type(odd) {
+  background-color: var(--white-100);
+}
+table.table-striped tr:nth-of-type(odd), .table.table-striped tr:nth-of-type(odd) {
+  width: 100%;
+}
+table tr.highlight, .table tr.highlight {
+  background-color: var(--white-100);
+}

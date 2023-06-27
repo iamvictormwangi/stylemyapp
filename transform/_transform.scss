@@ -1,0 +1,44 @@
+@use "./../abstracts/" as *;
+
+@for $i from 0 to 161 {
+  @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+    .#{$class}-#{$i} {
+        transform:  #{$property}(0.1 * $i)  !important
+    }
+    .hvr\:#{$class}-#{$i}:hover {
+      transform:  #{$property}(0.1 * $i)  !important
+    }
+    .fcs\:#{$class}-#{$i}:focus {
+      transform:  #{$property}(0.1 * $i)  !important
+    }
+  }
+}
+
+@for $i from 0 to 13 {
+  @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+    .#{$class}-#{$i} {
+      transform:  #{$property}(25% * $i)  !important
+    }
+    .hvr\:#{$class}-#{$i}:hover {
+      transform:  #{$property}(25% * $i)  !important
+    }
+    .fcs\:#{$class}-#{$i}:focus {
+      transform:  #{$property}(25% * $i)  !important
+    }
+  }
+}
+
+@for $i from 0 to 25 {
+  @each $class, $property in (rotate: rotate, skew-y: skewY, skew-x: skewX) {
+    .#{$class}-#{$i} {
+      transform:  #{$property}(15deg * $i)  !important
+    }
+    .hvr\:#{$class}-#{$i}:hover {
+      transform:  #{$property}(15deg * $i)  !important
+    }
+    .fcs\:#{$class}-#{$i}:focus {
+      transform:  #{$property}(15deg * $i)  !important
+    }
+  }
+}
+

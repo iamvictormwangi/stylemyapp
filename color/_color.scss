@@ -1,0 +1,244 @@
+@use "./../abstracts/" as *;
+
+$colors: (
+  success: #48c78e,
+  info: #3e8ed0,
+  warning: #ffe08a,
+  danger: #f14668,
+  muted: #466474,
+  pink: pink,
+  red: red,
+  blue: blue,
+  brown: brown,
+  purple: purple,
+  cyan: cyan,
+  grey: grey,
+  lightgrey: lightgrey,
+  darkgrey: darkgrey,
+  green: green,
+  indigo: indigo,
+  white: white,
+  yellow: yellow,
+  maroon: maroon,
+  orange: orange,
+  teal: teal,
+  black: black
+);
+
+@each $color, $value in $colors {
+  @each $prefix, $property in ( bg-: background-color, '': color, bd-: border-color, caret-: caret-color, outline-: outline-color) {
+
+    @for $i from 1 to 13 {
+      @if $i == 1 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: lighten($value, 15 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(lighten($value, 15 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: lighten($value, 15 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(lighten($value, 15 * 2)) !important
+          }
+        }
+      }
+      @else if $i == 2 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: lighten($value, 12 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(lighten($value, 12 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: lighten($value, 12 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(lighten($value, 12 * 2)) !important
+          }
+        }
+      }
+        @else if $i == 3 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: lighten($value, 8 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(lighten($value, 8 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: lighten($value, 8 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(lighten($value, 8 * 2)) !important
+          }
+        }
+      }  @else if $i == 4 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: lighten($value, 4.5 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(lighten($value, 4.5 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: lighten($value, 4.5 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(lighten($value, 4.5 * 2)) !important
+          }
+        }
+      }  @else if $i == 5 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: lighten($value, 3 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(lighten($value, 3 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: lighten($value, 3 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(lighten($value, 3 * 2)) !important
+          }
+        }
+      }  @else if $i == 6 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: lighten($value, 1.25 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(lighten($value, 1.25 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: lighten($value, 1.25 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(lighten($value, 1.25 * 2)) !important
+          }
+        }
+      }
+      @else if $i == 7 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: darken($value, 1.25 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(darken($value, 1.25 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: darken($value, 1.25 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(darken($value, 1.25 * 2)) !important
+          }
+        }
+      }  @else if $i == 8 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: darken($value, 3 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(darken($value, 3 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: darken($value, 3 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(darken($value, 3 * 2)) !important
+          }
+        }
+      }  @else if $i == 9 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: darken($value, 4.5 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(darken($value, 4.5 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: darken($value, 4.5 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(darken($value, 4.5 * 2)) !important
+          }
+        }
+      }  @else if $i == 10 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: darken($value, 8 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(darken($value, 8 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: darken($value, 8 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(darken($value, 8 * 2)) !important
+          }
+        }
+      }  @else if $i == 11 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: darken($value, 12 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(darken($value, 12 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: darken($value, 12 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(darken($value, 12 * 2)) !important
+          }
+        }
+      }  @else if $i == 12 {
+        .#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: darken($value, 15 * 2) !important
+        }
+        .-#{$prefix}#{'' + $color}-#{$i} {
+          #{$property}: complement(darken($value, 15 * 2)) !important
+        }
+        @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+          .#{$state-prefix}\:#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+             #{$property}: darken($value, 15 * 2) !important
+          }
+          .#{$state-prefix}\:-#{$prefix}#{'' + $color}-#{$i}:#{$state} {
+            #{$property}: complement(darken($value, 15 * 2)) !important
+          }
+        }
+      }
+    }
+  }
+}
+
+// Brand Colors
+
+@each $sprefix, $sproperty in ( bg: background-color, bd: border-color) {
+  @each $color, $value in $brand-colors {
+    .#{$sprefix}-#{'' + '' + $color} {
+      #{$sproperty}: #{$value} !important
+    }
+    @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+      .#{$state-prefix}\:#{$sprefix}-#{'' + '' + $color}:#{$state} {
+        #{$sproperty}: $value !important
+      }
+    }
+  }
+}
+
+@each $color, $value in $brand-colors {
+  .#{'' + $color} {
+    color: #{$value} !important
+  }
+  @each $state, $state-prefix in ( hover: hvr, focus: fcs) {
+    .#{$state-prefix}\:#{'' + $color}:#{$state} {
+      color: $value !important
+    }
+  }
+}

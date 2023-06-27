@@ -1,0 +1,8 @@
+.pagination {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination .pagination-item {
+  margin: 0 0.08rem;
+}

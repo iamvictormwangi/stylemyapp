@@ -1,0 +1,20 @@
+@use "./../abstracts/" as *;
+
+.checkbox, .radio {
+  margin-right: 1rem
+}
+
+.select {
+  padding: 0.40rem 0.43rem
+}
+
+.input, .textarea {
+  border: $borderWidth $borderStyle $borderColor;
+}
+.input {
+  padding: 0.5rem;
+}
+
+.textarea {
+  padding: 0.8rem;
+}

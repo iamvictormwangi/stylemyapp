@@ -1,0 +1,7 @@
+.list {
+  position: relative;
+}
+.list .list-item {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}

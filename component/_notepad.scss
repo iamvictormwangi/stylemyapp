@@ -1,0 +1,9 @@
+@use "./../abstracts/" as *;
+
+.notepad {
+  border-left: 0.6rem solid black;
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  min-height: 3em;
+  padding: 0.5rem 0.5rem 0.75rem;
+}

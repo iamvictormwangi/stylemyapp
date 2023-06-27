@@ -1,0 +1,159 @@
+@use "./../abstracts/" as *;
+@use "sass:math";
+
+.row {
+  display: flex;
+  flex-wrap: wrap
+}
+
+@each $v in ( 12, 24 ) {
+  @for $i from 1 through $v {
+    .col-#{$i}-of-#{$v} {
+      width: calc(100% * math.div($i, $v)) !important
+    }
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @if $breakpoint == "mobile" {
+    @media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+
+      .\@mobile\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@mobile\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+
+    }
+
+  } @else if $breakpoint == "tablet" {
+
+    @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+
+      .\@tablet\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@tablet\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $tablet-min-width) {
+
+      .\@tablet-up\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@tablet-up\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $tablet-max-width) {
+
+      .\@tablet-down\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@tablet-down\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+    }
+
+  } @else if $breakpoint == "laptop" {
+
+    @media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width) {
+
+      .\@laptop\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@laptop\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $laptop-min-width) {
+
+      .\@laptop-up\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@laptop-up\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $laptop-max-width) {
+
+      .\@laptop-down\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@laptop-down\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+    }
+
+  } @else if $breakpoint == "desktop" {
+
+    @media screen and (min-width: $desktop-min-width) {
+
+      .\@desktop\:row {
+        display: flex;
+        flex-wrap: wrap
+      }
+
+      @each $v in ( 12, 24 ) {
+        @for $i from 1 through $v {
+          .\@desktop\:col-#{$i}-of-#{$v} {
+            width: calc(100% * math.div($i, $v)) !important
+          }
+        }
+      }
+    }
+  }
+}
+
+

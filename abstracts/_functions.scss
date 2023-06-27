@@ -1,0 +1,11 @@
+@use "sass:math";
+
+@function remove-decimal($number) {
+  $number: math.div($number * 10, 1);
+  $number: math.div($number, 10);
+  @if $number % math.floor($number) == 0 {
+    @return $number
+  } @else {
+    @return math.floor($number) + '\\.5'
+  }
+}

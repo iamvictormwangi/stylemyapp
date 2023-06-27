@@ -1,0 +1,23 @@
+@use "./../abstracts/" as *;
+
+.dropdown-relative {
+  position: relative;
+
+  .dropdown {
+    position: absolute !important;
+    top: calc(100% + 0.45rem);
+    pointer-events: none;
+    display: none;
+    opacity: 0;
+
+    &.dropdown-content {
+      padding: 1rem .8rem;
+    }
+
+    &.active {
+      opacity: 1 !important;
+      pointer-events: auto
+    }
+  }
+}
+

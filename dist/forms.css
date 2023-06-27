@@ -1,0 +1,21 @@
+.checkbox, .radio {
+  margin-right: 1rem;
+}
+
+.select {
+  padding: 0.4rem 0.43rem;
+}
+
+.input, .textarea {
+  border: 1.5px solid rgb(0, 0, 0);
+}
+
+.input {
+  padding: 0.5rem;
+}
+
+.textarea {
+  padding: 0.8rem;
+}
+
+/*# sourceMappingURL=forms.css.map */

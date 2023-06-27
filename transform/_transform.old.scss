@@ -1,0 +1,419 @@
+@use "./../abstracts/" as *;
+
+@for $i from 0 to 161 {
+  @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+    .#{$class}-#{$i} {
+        transform:  #{$property}(0.1 * $i)  !important
+    }
+    .hvr\:#{$class}-#{$i}:hover {
+      transform:  #{$property}(0.1 * $i)  !important
+    }
+    .fcs\:#{$class}-#{$i}:focus {
+      transform:  #{$property}(0.1 * $i)  !important
+    }
+  }
+}
+
+@for $i from 0 to 13 {
+  @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+    .#{$class}-#{$i} {
+      transform:  #{$property}(25% * $i)  !important
+    }
+    .hvr\:#{$class}-#{$i}:hover {
+      transform:  #{$property}(25% * $i)  !important
+    }
+    .fcs\:#{$class}-#{$i}:focus {
+      transform:  #{$property}(25% * $i)  !important
+    }
+  }
+}
+
+@for $i from 0 to 25 {
+  @each $class, $property in (rotate: rotate, skew-y: skewY, skew-x: skewX) {
+    .#{$class}-#{$i} {
+      transform:  #{$property}(15deg * $i)  !important
+    }
+    .hvr\:#{$class}-#{$i}:hover {
+      transform:  #{$property}(15deg * $i)  !important
+    }
+    .fcs\:#{$class}-#{$i}:focus {
+      transform:  #{$property}(15deg * $i)  !important
+    }
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @if $breakpoint == "mobile" {
+    @media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@mobile\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@mobile\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@mobile\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@mobile\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@mobile\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@mobile\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@mobile\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@mobile\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@mobile\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+    }
+
+  } @else if $breakpoint == "tablet" {
+
+    @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@tablet\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@tablet\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@tablet\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@tablet\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@tablet\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@tablet\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@tablet\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@tablet\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@tablet\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $tablet-min-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@tablet-up\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@tablet-up\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@tablet-up\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@tablet-up\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@tablet-up\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@tablet-up\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@tablet-up\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@tablet-up\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@tablet-up\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $tablet-max-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@tablet-down\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@tablet-down\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@tablet-down\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@tablet-down\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@tablet-down\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@tablet-down\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@tablet-down\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@tablet-down\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@tablet-down\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+
+    }
+
+  } @else if $breakpoint == "laptop" {
+
+    @media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@laptop\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@laptop\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@laptop\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@laptop\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@laptop\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@laptop\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@laptop\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@laptop\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@laptop\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $laptop-min-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@laptop-up\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@laptop-up\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@laptop-up\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@laptop-up\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@laptop-up\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@laptop-up\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@laptop-up\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@laptop-up\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@laptop-up\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $laptop-max-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@laptop-down\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@laptop-down\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@laptop-down\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@laptop-down\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@laptop-down\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@laptop-down\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@laptop-down\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@laptop-down\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@laptop-down\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+
+    }
+
+  } @else if $breakpoint == "desktop" {
+
+    @media screen and (min-width: $desktop-min-width) {
+
+      @for $i from 0 to 161 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@desktop\:#{$class}-#{$i} {
+              transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@desktop\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+          .\@desktop\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(0.1 * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 13 {
+        @each $class, $property in (scale: scale, scale-y: scaleY, scale-x: scaleX) {
+          .\@desktop\:#{$class}-#{$i} {
+              transform:  #{$property}(25% * $i)  !important
+          }
+          .\@desktop\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(25% * $i)  !important
+          }
+          .\@desktop\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(25% * $i)  !important
+          }
+        }
+      }
+
+      @for $i from 0 to 25 {
+        @each $class, $property in (rotate: scale, skew-y: skewY, skew-x: skewX) {
+          .\@desktop\:#{$class}-#{$i} {
+              transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@desktop\:hvr\:#{$class}-#{$i}:hover {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+          .\@desktop\:fcs\:#{$class}-#{$i}:focus {
+            transform:  #{$property}(15deg * $i)  !important
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.modal {
+  position: absolute;
+  top: 2rem;
+  left: 30%;
+  width: 20rem;
+  z-index: 1500;
+  min-height: 6rem;
+  transition: display 0.5s ease-in;
+  opacity: 0.85;
+}
+.modal .modal-content {
+  padding: 1rem 0.8rem;
+}

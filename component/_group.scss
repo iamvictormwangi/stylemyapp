@@ -1,0 +1,13 @@
+@use "./../abstracts/" as *;
+
+.group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  align-items: stretch;
+
+  & .group-item {
+    margin-bottom: 0
+  }
+}

@@ -1,0 +1,28 @@
+@use "./../abstracts/" as *;
+
+.box {
+  width: 100%;
+  min-height: 3rem;
+
+  & .box-content {
+    padding: 1rem .8rem;
+
+    & .box-img,
+    & .box-thumb,
+    & .box-video {
+      width: 100%;
+      height: auto
+    }
+  }
+}
+
+.box-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: relative;
+
+  & .box-group-item {
+    margin: 0
+  }
+}

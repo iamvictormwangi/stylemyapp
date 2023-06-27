@@ -1,0 +1,37 @@
+@use "./../abstracts/" as *;
+
+@for $i from 0 to 301 {
+  @each $class, $property in $padding {
+    .#{$class}-#{$i} {
+      @if $i == 0 {
+        #{$property}: 0 !important
+      } @else {
+        #{$property}: $i * 0.125rem !important
+      }
+    }
+  }
+
+  @each $class, $property in $padding-negative {
+    .#{$class}-#{$i} {
+      @if $i == 0 {
+        #{$property}: 0 !important
+      } @else {
+        #{$property}: $i * 0.125rem * -1 !important
+      }
+    }
+  }
+}
+
+@for $i from 1 to 101 {
+  @each $class-name, $property in $padding {
+    .#{$class-name}-#{remove-decimal($i * 2.5)}\% {
+      #{$property}: $i * 2.5% !important;
+    }
+    .#{$class-name}-#{remove-decimal($i * 2.5)}vh {
+      #{$property}: $i * 2.5vh !important;
+    }
+    .#{$class-name}-#{remove-decimal($i * 2.5)}vw {
+      #{$property}: $i * 2.5vw !important;
+    }
+  }
+}

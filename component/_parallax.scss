@@ -1,0 +1,21 @@
+@use "./../abstracts/" as *;
+
+.parallax {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+
+  & .parallax-content {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+

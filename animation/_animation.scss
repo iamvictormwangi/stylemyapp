@@ -1,0 +1,182 @@
+@use "./../abstracts/" as *;
+
+.anime.bounce {
+  animation: bounce 700ms ease-in;
+}
+
+.anime.pulse {
+  animation: pulse 450ms ease-in;
+}
+
+.anime.spin {
+  animation: spin 675ms ease-in;
+}
+
+.anime.fo {
+  animation: fade-out 750ms ease-out;
+}
+
+.anime.fi {
+  animation: fade-in 1000ms ease-out;
+}
+
+.anime.sit {
+  animation: slide-in-top 1000ms ease-out;
+}
+
+.anime.sib{
+  animation: slide-in-botm 1000ms ease-out;
+}
+
+.anime.sil {
+  animation: slide-in-left 1000ms ease-out;
+}
+
+.anime.sir {
+  animation: slide-in-riht 1000ms ease-out;
+}
+
+.anime.sot {
+  animation: slide-out-top 1000ms ease-out;
+}
+
+.anime.sob {
+  animation: slide-out-botm 1000ms ease-out;
+}
+
+.anime.sol {
+  animation: slide-out-left 1000ms ease-out;
+}
+
+.anime.sor {
+  animation: slide-out-riht 1000ms ease-out;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes slide-in-botm {
+  from {
+    transform: translateY(120px);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-120px);
+  }
+}
+
+@keyframes slide-in-riht {
+  from {
+    transform: translateX(120px);
+  }
+}
+
+@keyframes slide-out-top {
+  from {
+    transform: translateY(120px);
+  }
+}
+
+@keyframes slide-out-botm {
+  from {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes slide-out-left {
+  from {
+    transform: translateX(120px);
+  }
+}
+
+@keyframes slide-out-riht {
+  from {
+    transform: translateX(-120px);
+  }
+}
+
+@for $i from 0 to 51 {
+  @if $i < 41 {
+    .delay-#{$i} {
+      transition-delay: $i * 25 !important
+    }
+    .last-#{$i} {
+      transition-duration: $i * 25 !important
+    }
+  } @else {
+    .delay-#{$i} {
+      transition-delay: $i * 55 !important
+    }
+    .last-#{$i} {
+      transition-duration: $i * 25 !important
+    }
+  }
+}
+
+@each $property, $map in $animation {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $k, $v in $values {
+    @if $prefix == "" {
+      .#{$prefix}#{$k} {
+        #{$property}: $v !important;
+      }
+      .hvr\:#{$prefix}#{$k}:hover {
+        #{$property}: $v !important;
+      }
+      .fcs\:#{$prefix}#{$k}:focus {
+        #{$property}: $v !important;
+      }
+    } @else {
+      .#{$prefix}-#{$k} {
+        #{$property}: $v !important;
+      }
+      .hvr\:#{$prefix}-#{$k}:hover {
+        #{$property}: $v !important;
+      }
+      .fcs\:#{$prefix}-#{$k}:focus {
+        #{$property}: $v !important;
+      }
+    }
+  }
+}
+

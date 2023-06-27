@@ -1,0 +1,11 @@
+@use "./../abstracts/" as *;
+
+.alert {
+  min-height: 3rem;
+  z-index: 1500;
+  opacity: 0.85;
+
+  & .alert-content {
+    padding: 1rem .8rem;
+  }
+}

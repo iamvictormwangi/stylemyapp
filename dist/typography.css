@@ -1,0 +1,1521 @@
+.text-link {
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.5s ease;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.text-base {
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+/* Headings */
+h1,
+.h1,
+.title {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2,
+.subtitle {
+  font-size: 2.25rem;
+}
+
+h3,
+.h3 {
+  font-size: 2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.75rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.5rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 45rem) {
+  h1,
+.h1,
+.title {
+    font-size: 2rem;
+  }
+  h2,
+.h2,
+.subtitle {
+    font-size: 1.75rem;
+  }
+  h3,
+.h3 {
+    font-size: 1.25rem;
+  }
+  h4,
+.h4 {
+    font-size: 1.5rem;
+  }
+  h5,
+.h5 {
+    font-size: 1.25rem;
+  }
+  h6,
+.h6 {
+    font-size: 1.25rem;
+  }
+}
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+.hvr\:sans-serif:hover {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+.fcs\:sans-serif:focus {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+.serif {
+  font-family: serif !important;
+}
+
+.hvr\:serif:hover {
+  font-family: serif !important;
+}
+
+.fcs\:serif:focus {
+  font-family: serif !important;
+}
+
+.system-sans-serif {
+  font-family: sans-serif !important;
+}
+
+.hvr\:system-sans-serif:hover {
+  font-family: sans-serif !important;
+}
+
+.fcs\:system-sans-serif:focus {
+  font-family: sans-serif !important;
+}
+
+.system-serif {
+  font-family: serif !important;
+}
+
+.hvr\:system-serif:hover {
+  font-family: serif !important;
+}
+
+.fcs\:system-serif:focus {
+  font-family: serif !important;
+}
+
+.monospace {
+  font-family: monospace !important;
+}
+
+.hvr\:monospace:hover {
+  font-family: monospace !important;
+}
+
+.fcs\:monospace:focus {
+  font-family: monospace !important;
+}
+
+.courier {
+  font-family: Courier Next, courier, monospace !important;
+}
+
+.hvr\:courier:hover {
+  font-family: Courier Next, courier, monospace !important;
+}
+
+.fcs\:courier:focus {
+  font-family: Courier Next, courier, monospace !important;
+}
+
+.helvetica {
+  font-family: helvetica neue, helvetica, sans-serif !important;
+}
+
+.hvr\:helvetica:hover {
+  font-family: helvetica neue, helvetica, sans-serif !important;
+}
+
+.fcs\:helvetica:focus {
+  font-family: helvetica neue, helvetica, sans-serif !important;
+}
+
+.avenir {
+  font-family: avenir next, avenir, sans-serif !important;
+}
+
+.hvr\:avenir:hover {
+  font-family: avenir next, avenir, sans-serif !important;
+}
+
+.fcs\:avenir:focus {
+  font-family: avenir next, avenir, sans-serif !important;
+}
+
+.athelas {
+  font-family: athelas, georgia, serif !important;
+}
+
+.hvr\:athelas:hover {
+  font-family: athelas, georgia, serif !important;
+}
+
+.fcs\:athelas:focus {
+  font-family: athelas, georgia, serif !important;
+}
+
+.georgia {
+  font-family: georgia, serif !important;
+}
+
+.hvr\:georgia:hover {
+  font-family: georgia, serif !important;
+}
+
+.fcs\:georgia:focus {
+  font-family: georgia, serif !important;
+}
+
+.times {
+  font-family: times, serif !important;
+}
+
+.hvr\:times:hover {
+  font-family: times, serif !important;
+}
+
+.fcs\:times:focus {
+  font-family: times, serif !important;
+}
+
+.bodoni {
+  font-family: Bodoni MT, serif !important;
+}
+
+.hvr\:bodoni:hover {
+  font-family: Bodoni MT, serif !important;
+}
+
+.fcs\:bodoni:focus {
+  font-family: Bodoni MT, serif !important;
+}
+
+.calisto {
+  font-family: Calisto MT, serif !important;
+}
+
+.hvr\:calisto:hover {
+  font-family: Calisto MT, serif !important;
+}
+
+.fcs\:calisto:focus {
+  font-family: Calisto MT, serif !important;
+}
+
+.garamold {
+  font-family: garamond, serif !important;
+}
+
+.hvr\:garamold:hover {
+  font-family: garamond, serif !important;
+}
+
+.fcs\:garamold:focus {
+  font-family: garamond, serif !important;
+}
+
+.baskerville {
+  font-family: baskerville, serif !important;
+}
+
+.hvr\:baskerville:hover {
+  font-family: baskerville, serif !important;
+}
+
+.fcs\:baskerville:focus {
+  font-family: baskerville, serif !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.hvr\:italic:hover {
+  font-style: italic !important;
+}
+
+.fcs\:italic:focus {
+  font-style: italic !important;
+}
+
+.fnt-25\% {
+  font-size: 25% !important;
+}
+
+.hvr\:fnt-25\%:hover {
+  font-size: 25% !important;
+}
+
+.fcs\:fnt-25\%:focus {
+  font-size: 25% !important;
+}
+
+.fnt-50\% {
+  font-size: 50% !important;
+}
+
+.hvr\:fnt-50\%:hover {
+  font-size: 50% !important;
+}
+
+.fcs\:fnt-50\%:focus {
+  font-size: 50% !important;
+}
+
+.fnt-75\% {
+  font-size: 75% !important;
+}
+
+.hvr\:fnt-75\%:hover {
+  font-size: 75% !important;
+}
+
+.fcs\:fnt-75\%:focus {
+  font-size: 75% !important;
+}
+
+.fnt-100\% {
+  font-size: 100% !important;
+}
+
+.hvr\:fnt-100\%:hover {
+  font-size: 100% !important;
+}
+
+.fcs\:fnt-100\%:focus {
+  font-size: 100% !important;
+}
+
+.fnt-125\% {
+  font-size: 125% !important;
+}
+
+.hvr\:fnt-125\%:hover {
+  font-size: 125% !important;
+}
+
+.fcs\:fnt-125\%:focus {
+  font-size: 125% !important;
+}
+
+.fnt-150\% {
+  font-size: 150% !important;
+}
+
+.hvr\:fnt-150\%:hover {
+  font-size: 150% !important;
+}
+
+.fcs\:fnt-150\%:focus {
+  font-size: 150% !important;
+}
+
+.fnt-175\% {
+  font-size: 175% !important;
+}
+
+.hvr\:fnt-175\%:hover {
+  font-size: 175% !important;
+}
+
+.fcs\:fnt-175\%:focus {
+  font-size: 175% !important;
+}
+
+.fnt-200\% {
+  font-size: 200% !important;
+}
+
+.hvr\:fnt-200\%:hover {
+  font-size: 200% !important;
+}
+
+.fcs\:fnt-200\%:focus {
+  font-size: 200% !important;
+}
+
+.fnt-225\% {
+  font-size: 225% !important;
+}
+
+.hvr\:fnt-225\%:hover {
+  font-size: 225% !important;
+}
+
+.fcs\:fnt-225\%:focus {
+  font-size: 225% !important;
+}
+
+.fnt-250\% {
+  font-size: 250% !important;
+}
+
+.hvr\:fnt-250\%:hover {
+  font-size: 250% !important;
+}
+
+.fcs\:fnt-250\%:focus {
+  font-size: 250% !important;
+}
+
+.fnt-275\% {
+  font-size: 275% !important;
+}
+
+.hvr\:fnt-275\%:hover {
+  font-size: 275% !important;
+}
+
+.fcs\:fnt-275\%:focus {
+  font-size: 275% !important;
+}
+
+.fnt-300\% {
+  font-size: 300% !important;
+}
+
+.hvr\:fnt-300\%:hover {
+  font-size: 300% !important;
+}
+
+.fcs\:fnt-300\%:focus {
+  font-size: 300% !important;
+}
+
+.fnt-weit-light {
+  font-weight: 300 !important;
+}
+
+.hvr\:fnt-weit-light:hover {
+  font-weight: 300 !important;
+}
+
+.fcs\:fnt-weit-light:focus {
+  font-weight: 300 !important;
+}
+
+.fnt-weit-normal {
+  font-weight: 400 !important;
+}
+
+.hvr\:fnt-weit-normal:hover {
+  font-weight: 400 !important;
+}
+
+.fcs\:fnt-weit-normal:focus {
+  font-weight: 400 !important;
+}
+
+.fnt-weit-medium {
+  font-weight: 500 !important;
+}
+
+.hvr\:fnt-weit-medium:hover {
+  font-weight: 500 !important;
+}
+
+.fcs\:fnt-weit-medium:focus {
+  font-weight: 500 !important;
+}
+
+.fnt-weit-semibold {
+  font-weight: 600 !important;
+}
+
+.hvr\:fnt-weit-semibold:hover {
+  font-weight: 600 !important;
+}
+
+.fcs\:fnt-weit-semibold:focus {
+  font-weight: 600 !important;
+}
+
+.fnt-weit-bold {
+  font-weight: 700 !important;
+}
+
+.hvr\:fnt-weit-bold:hover {
+  font-weight: 700 !important;
+}
+
+.fcs\:fnt-weit-bold:focus {
+  font-weight: 700 !important;
+}
+
+.fnt-weit-100 {
+  font-weight: 100 !important;
+}
+
+.hvr\:fnt-weit-100:hover {
+  font-weight: 100 !important;
+}
+
+.fcs\:fnt-weit-100:focus {
+  font-weight: 100 !important;
+}
+
+.fnt-weit-200 {
+  font-weight: 200 !important;
+}
+
+.hvr\:fnt-weit-200:hover {
+  font-weight: 200 !important;
+}
+
+.fcs\:fnt-weit-200:focus {
+  font-weight: 200 !important;
+}
+
+.fnt-weit-300 {
+  font-weight: 300 !important;
+}
+
+.hvr\:fnt-weit-300:hover {
+  font-weight: 300 !important;
+}
+
+.fcs\:fnt-weit-300:focus {
+  font-weight: 300 !important;
+}
+
+.fnt-weit-400 {
+  font-weight: 400 !important;
+}
+
+.hvr\:fnt-weit-400:hover {
+  font-weight: 400 !important;
+}
+
+.fcs\:fnt-weit-400:focus {
+  font-weight: 400 !important;
+}
+
+.fnt-weit-500 {
+  font-weight: 500 !important;
+}
+
+.hvr\:fnt-weit-500:hover {
+  font-weight: 500 !important;
+}
+
+.fcs\:fnt-weit-500:focus {
+  font-weight: 500 !important;
+}
+
+.fnt-weit-600 {
+  font-weight: 600 !important;
+}
+
+.hvr\:fnt-weit-600:hover {
+  font-weight: 600 !important;
+}
+
+.fcs\:fnt-weit-600:focus {
+  font-weight: 600 !important;
+}
+
+.fnt-weit-700 {
+  font-weight: 700 !important;
+}
+
+.hvr\:fnt-weit-700:hover {
+  font-weight: 700 !important;
+}
+
+.fcs\:fnt-weit-700:focus {
+  font-weight: 700 !important;
+}
+
+.fnt-weit-800 {
+  font-weight: 800 !important;
+}
+
+.hvr\:fnt-weit-800:hover {
+  font-weight: 800 !important;
+}
+
+.fcs\:fnt-weit-800:focus {
+  font-weight: 800 !important;
+}
+
+.fnt-weit-900 {
+  font-weight: 900 !important;
+}
+
+.hvr\:fnt-weit-900:hover {
+  font-weight: 900 !important;
+}
+
+.fcs\:fnt-weit-900:focus {
+  font-weight: 900 !important;
+}
+
+.text-l {
+  text-align: left !important;
+}
+
+.hvr\:text-l:hover {
+  text-align: left !important;
+}
+
+.fcs\:text-l:focus {
+  text-align: left !important;
+}
+
+.text-r {
+  text-align: right !important;
+}
+
+.hvr\:text-r:hover {
+  text-align: right !important;
+}
+
+.fcs\:text-r:focus {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.hvr\:text-center:hover {
+  text-align: center !important;
+}
+
+.fcs\:text-center:focus {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.hvr\:text-justify:hover {
+  text-align: justify !important;
+}
+
+.fcs\:text-justify:focus {
+  text-align: justify !important;
+}
+
+.text-start {
+  text-align: start !important;
+}
+
+.hvr\:text-start:hover {
+  text-align: start !important;
+}
+
+.fcs\:text-start:focus {
+  text-align: start !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+.hvr\:text-end:hover {
+  text-align: end !important;
+}
+
+.fcs\:text-end:focus {
+  text-align: end !important;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
+}
+
+.hvr\:lowercase:hover {
+  text-transform: lowercase !important;
+}
+
+.fcs\:lowercase:focus {
+  text-transform: lowercase !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.hvr\:uppercase:hover {
+  text-transform: uppercase !important;
+}
+
+.fcs\:uppercase:focus {
+  text-transform: uppercase !important;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.hvr\:capitalize:hover {
+  text-transform: capitalize !important;
+}
+
+.fcs\:capitalize:focus {
+  text-transform: capitalize !important;
+}
+
+.normal-case {
+  text-transform: none !important;
+}
+
+.hvr\:normal-case:hover {
+  text-transform: none !important;
+}
+
+.fcs\:normal-case:focus {
+  text-transform: none !important;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis !important;
+}
+
+.hvr\:text-ellipsis:hover {
+  text-overflow: ellipsis !important;
+}
+
+.fcs\:text-ellipsis:focus {
+  text-overflow: ellipsis !important;
+}
+
+.text-clip {
+  text-overflow: clip !important;
+}
+
+.hvr\:text-clip:hover {
+  text-overflow: clip !important;
+}
+
+.fcs\:text-clip:focus {
+  text-overflow: clip !important;
+}
+
+.underline {
+  text-decoration-line: underline !important;
+}
+
+.hvr\:underline:hover {
+  text-decoration-line: underline !important;
+}
+
+.fcs\:underline:focus {
+  text-decoration-line: underline !important;
+}
+
+.overline {
+  text-decoration-line: overline !important;
+}
+
+.hvr\:overline:hover {
+  text-decoration-line: overline !important;
+}
+
+.fcs\:overline:focus {
+  text-decoration-line: overline !important;
+}
+
+.line-through {
+  text-decoration-line: line-through !important;
+}
+
+.hvr\:line-through:hover {
+  text-decoration-line: line-through !important;
+}
+
+.fcs\:line-through:focus {
+  text-decoration-line: line-through !important;
+}
+
+.no-underline {
+  text-decoration-line: none !important;
+}
+
+.hvr\:no-underline:hover {
+  text-decoration-line: none !important;
+}
+
+.fcs\:no-underline:focus {
+  text-decoration-line: none !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.hvr\:text-decoration-none:hover {
+  text-decoration: none !important;
+}
+
+.fcs\:text-decoration-none:focus {
+  text-decoration: none !important;
+}
+
+.ls-normal {
+  letter-spacing: normal !important;
+}
+
+.hvr\:ls-normal:hover {
+  letter-spacing: normal !important;
+}
+
+.fcs\:ls-normal:focus {
+  letter-spacing: normal !important;
+}
+
+.ls-1 {
+  letter-spacing: -0.05rem !important;
+}
+
+.hvr\:ls-1:hover {
+  letter-spacing: -0.05rem !important;
+}
+
+.fcs\:ls-1:focus {
+  letter-spacing: -0.05rem !important;
+}
+
+.ls-2 {
+  letter-spacing: -0.025rem !important;
+}
+
+.hvr\:ls-2:hover {
+  letter-spacing: -0.025rem !important;
+}
+
+.fcs\:ls-2:focus {
+  letter-spacing: -0.025rem !important;
+}
+
+.ls-3 {
+  letter-spacing: 0rem !important;
+}
+
+.hvr\:ls-3:hover {
+  letter-spacing: 0rem !important;
+}
+
+.fcs\:ls-3:focus {
+  letter-spacing: 0rem !important;
+}
+
+.ls-4 {
+  letter-spacing: 0.025rem !important;
+}
+
+.hvr\:ls-4:hover {
+  letter-spacing: 0.025rem !important;
+}
+
+.fcs\:ls-4:focus {
+  letter-spacing: 0.025rem !important;
+}
+
+.ls-5 {
+  letter-spacing: 0.05rem !important;
+}
+
+.hvr\:ls-5:hover {
+  letter-spacing: 0.05rem !important;
+}
+
+.fcs\:ls-5:focus {
+  letter-spacing: 0.05rem !important;
+}
+
+.ls-6 {
+  letter-spacing: 0.075rem !important;
+}
+
+.hvr\:ls-6:hover {
+  letter-spacing: 0.075rem !important;
+}
+
+.fcs\:ls-6:focus {
+  letter-spacing: 0.075rem !important;
+}
+
+.ls-7 {
+  letter-spacing: 0.1 !important;
+}
+
+.hvr\:ls-7:hover {
+  letter-spacing: 0.1 !important;
+}
+
+.fcs\:ls-7:focus {
+  letter-spacing: 0.1 !important;
+}
+
+.ls-8 {
+  letter-spacing: 0.125rem !important;
+}
+
+.hvr\:ls-8:hover {
+  letter-spacing: 0.125rem !important;
+}
+
+.fcs\:ls-8:focus {
+  letter-spacing: 0.125rem !important;
+}
+
+.ls-9 {
+  letter-spacing: 0.25rem !important;
+}
+
+.hvr\:ls-9:hover {
+  letter-spacing: 0.25rem !important;
+}
+
+.fcs\:ls-9:focus {
+  letter-spacing: 0.25rem !important;
+}
+
+.ls-10 {
+  letter-spacing: 0.5rem !important;
+}
+
+.hvr\:ls-10:hover {
+  letter-spacing: 0.5rem !important;
+}
+
+.fcs\:ls-10:focus {
+  letter-spacing: 0.5rem !important;
+}
+
+.lb-auto {
+  line-break: auto !important;
+}
+
+.hvr\:lb-auto:hover {
+  line-break: auto !important;
+}
+
+.fcs\:lb-auto:focus {
+  line-break: auto !important;
+}
+
+.lb-loose {
+  line-break: loose !important;
+}
+
+.hvr\:lb-loose:hover {
+  line-break: loose !important;
+}
+
+.fcs\:lb-loose:focus {
+  line-break: loose !important;
+}
+
+.lb-normal {
+  line-break: normal !important;
+}
+
+.hvr\:lb-normal:hover {
+  line-break: normal !important;
+}
+
+.fcs\:lb-normal:focus {
+  line-break: normal !important;
+}
+
+.lb-strict {
+  line-break: strict !important;
+}
+
+.hvr\:lb-strict:hover {
+  line-break: strict !important;
+}
+
+.fcs\:lb-strict:focus {
+  line-break: strict !important;
+}
+
+.lb-anywhere {
+  line-break: anywhere !important;
+}
+
+.hvr\:lb-anywhere:hover {
+  line-break: anywhere !important;
+}
+
+.fcs\:lb-anywhere:focus {
+  line-break: anywhere !important;
+}
+
+.lh-normal {
+  line-height: normal !important;
+}
+
+.hvr\:lh-normal:hover {
+  line-height: normal !important;
+}
+
+.fcs\:lh-normal:focus {
+  line-height: normal !important;
+}
+
+.lh-10\% {
+  line-height: 10% !important;
+}
+
+.hvr\:lh-10\%:hover {
+  line-height: 10% !important;
+}
+
+.fcs\:lh-10\%:focus {
+  line-height: 10% !important;
+}
+
+.lh-20\% {
+  line-height: 20% !important;
+}
+
+.hvr\:lh-20\%:hover {
+  line-height: 20% !important;
+}
+
+.fcs\:lh-20\%:focus {
+  line-height: 20% !important;
+}
+
+.lh-30\% {
+  line-height: 30% !important;
+}
+
+.hvr\:lh-30\%:hover {
+  line-height: 30% !important;
+}
+
+.fcs\:lh-30\%:focus {
+  line-height: 30% !important;
+}
+
+.lh-40\% {
+  line-height: 40% !important;
+}
+
+.hvr\:lh-40\%:hover {
+  line-height: 40% !important;
+}
+
+.fcs\:lh-40\%:focus {
+  line-height: 40% !important;
+}
+
+.lh-50\% {
+  line-height: 50% !important;
+}
+
+.hvr\:lh-50\%:hover {
+  line-height: 50% !important;
+}
+
+.fcs\:lh-50\%:focus {
+  line-height: 50% !important;
+}
+
+.lh-60\% {
+  line-height: 60% !important;
+}
+
+.hvr\:lh-60\%:hover {
+  line-height: 60% !important;
+}
+
+.fcs\:lh-60\%:focus {
+  line-height: 60% !important;
+}
+
+.lh-70\% {
+  line-height: 70% !important;
+}
+
+.hvr\:lh-70\%:hover {
+  line-height: 70% !important;
+}
+
+.fcs\:lh-70\%:focus {
+  line-height: 70% !important;
+}
+
+.lh-80\% {
+  line-height: 80% !important;
+}
+
+.hvr\:lh-80\%:hover {
+  line-height: 80% !important;
+}
+
+.fcs\:lh-80\%:focus {
+  line-height: 80% !important;
+}
+
+.lh-90\% {
+  line-height: 90% !important;
+}
+
+.hvr\:lh-90\%:hover {
+  line-height: 90% !important;
+}
+
+.fcs\:lh-90\%:focus {
+  line-height: 90% !important;
+}
+
+.lh-100\% {
+  line-height: 100% !important;
+}
+
+.hvr\:lh-100\%:hover {
+  line-height: 100% !important;
+}
+
+.fcs\:lh-100\%:focus {
+  line-height: 100% !important;
+}
+
+.lh-1 {
+  line-height: 0.75rem !important;
+}
+
+.hvr\:lh-1:hover {
+  line-height: 0.75rem !important;
+}
+
+.fcs\:lh-1:focus {
+  line-height: 0.75rem !important;
+}
+
+.lh-2 {
+  line-height: 1rem !important;
+}
+
+.hvr\:lh-2:hover {
+  line-height: 1rem !important;
+}
+
+.fcs\:lh-2:focus {
+  line-height: 1rem !important;
+}
+
+.lh-3 {
+  line-height: 1.25rem !important;
+}
+
+.hvr\:lh-3:hover {
+  line-height: 1.25rem !important;
+}
+
+.fcs\:lh-3:focus {
+  line-height: 1.25rem !important;
+}
+
+.lh-4 {
+  line-height: 1.5rem !important;
+}
+
+.hvr\:lh-4:hover {
+  line-height: 1.5rem !important;
+}
+
+.fcs\:lh-4:focus {
+  line-height: 1.5rem !important;
+}
+
+.lh-5 {
+  line-height: 1.75rem !important;
+}
+
+.hvr\:lh-5:hover {
+  line-height: 1.75rem !important;
+}
+
+.fcs\:lh-5:focus {
+  line-height: 1.75rem !important;
+}
+
+.lh-6 {
+  line-height: 2rem !important;
+}
+
+.hvr\:lh-6:hover {
+  line-height: 2rem !important;
+}
+
+.fcs\:lh-6:focus {
+  line-height: 2rem !important;
+}
+
+.lh-7 {
+  line-height: 2.25rem !important;
+}
+
+.hvr\:lh-7:hover {
+  line-height: 2.25rem !important;
+}
+
+.fcs\:lh-7:focus {
+  line-height: 2.25rem !important;
+}
+
+.lh-8 {
+  line-height: 2.5rem !important;
+}
+
+.hvr\:lh-8:hover {
+  line-height: 2.5rem !important;
+}
+
+.fcs\:lh-8:focus {
+  line-height: 2.5rem !important;
+}
+
+.lh-9 {
+  line-height: 2.75rem !important;
+}
+
+.hvr\:lh-9:hover {
+  line-height: 2.75rem !important;
+}
+
+.fcs\:lh-9:focus {
+  line-height: 2.75rem !important;
+}
+
+.lh-10 {
+  line-height: 3rem !important;
+}
+
+.hvr\:lh-10:hover {
+  line-height: 3rem !important;
+}
+
+.fcs\:lh-10:focus {
+  line-height: 3rem !important;
+}
+
+.hy-none {
+  hyphens: none !important;
+}
+
+.hvr\:hy-none:hover {
+  hyphens: none !important;
+}
+
+.fcs\:hy-none:focus {
+  hyphens: none !important;
+}
+
+.hy-manual {
+  hyphens: manual !important;
+}
+
+.hvr\:hy-manual:hover {
+  hyphens: manual !important;
+}
+
+.fcs\:hy-manual:focus {
+  hyphens: manual !important;
+}
+
+.hy-auto {
+  hyphens: auto !important;
+}
+
+.hvr\:hy-auto:hover {
+  hyphens: auto !important;
+}
+
+.fcs\:hy-auto:focus {
+  hyphens: auto !important;
+}
+
+.ws-normal {
+  white-space: normal !important;
+}
+
+.hvr\:ws-normal:hover {
+  white-space: normal !important;
+}
+
+.fcs\:ws-normal:focus {
+  white-space: normal !important;
+}
+
+.ws-nowrap {
+  white-space: nowrap !important;
+}
+
+.hvr\:ws-nowrap:hover {
+  white-space: nowrap !important;
+}
+
+.fcs\:ws-nowrap:focus {
+  white-space: nowrap !important;
+}
+
+.ws-pre {
+  white-space: pre !important;
+}
+
+.hvr\:ws-pre:hover {
+  white-space: pre !important;
+}
+
+.fcs\:ws-pre:focus {
+  white-space: pre !important;
+}
+
+.ws-pre-line {
+  white-space: pre-line !important;
+}
+
+.hvr\:ws-pre-line:hover {
+  white-space: pre-line !important;
+}
+
+.fcs\:ws-pre-line:focus {
+  white-space: pre-line !important;
+}
+
+.ws-pre-wrap {
+  white-space: pre-wrap !important;
+}
+
+.hvr\:ws-pre-wrap:hover {
+  white-space: pre-wrap !important;
+}
+
+.fcs\:ws-pre-wrap:focus {
+  white-space: pre-wrap !important;
+}
+
+.ws-break-spaces {
+  white-space: break-spaces !important;
+}
+
+.hvr\:ws-break-spaces:hover {
+  white-space: break-spaces !important;
+}
+
+.fcs\:ws-break-spaces:focus {
+  white-space: break-spaces !important;
+}
+
+.wob-normal {
+  word-break: normal !important;
+}
+
+.hvr\:wob-normal:hover {
+  word-break: normal !important;
+}
+
+.fcs\:wob-normal:focus {
+  word-break: normal !important;
+}
+
+.wob-break-all {
+  word-break: break-all !important;
+}
+
+.hvr\:wob-break-all:hover {
+  word-break: break-all !important;
+}
+
+.fcs\:wob-break-all:focus {
+  word-break: break-all !important;
+}
+
+.wob-keep-all {
+  word-break: keep-all !important;
+}
+
+.hvr\:wob-keep-all:hover {
+  word-break: keep-all !important;
+}
+
+.fcs\:wob-keep-all:focus {
+  word-break: keep-all !important;
+}
+
+.wob-break-word {
+  word-break: break-word !important;
+}
+
+.hvr\:wob-break-word:hover {
+  word-break: break-word !important;
+}
+
+.fcs\:wob-break-word:focus {
+  word-break: break-word !important;
+}
+
+.text-sh-1 {
+  text-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-1:hover {
+  text-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-1:focus {
+  text-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-2 {
+  text-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-2:hover {
+  text-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-2:focus {
+  text-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-3 {
+  text-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-3:hover {
+  text-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-3:focus {
+  text-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-4 {
+  text-shadow: 2px 2px 8px 2 rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-4:hover {
+  text-shadow: 2px 2px 8px 2 rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-4:focus {
+  text-shadow: 2px 2px 8px 2 rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-5 {
+  text-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-5:hover {
+  text-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-5:focus {
+  text-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-6 {
+  text-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-6:hover {
+  text-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-6:focus {
+  text-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-7 {
+  text-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-7:hover {
+  text-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-7:focus {
+  text-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-8 {
+  text-shadow: 10px 12px 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-8:hover {
+  text-shadow: 10px 12px 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-8:focus {
+  text-shadow: 10px 12px 8px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-9 {
+  text-shadow: 10px 12px 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-9:hover {
+  text-shadow: 10px 12px 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-9:focus {
+  text-shadow: 10px 12px 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-10 {
+  text-shadow: 10px 12px 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hvr\:text-sh-10:hover {
+  text-shadow: 10px 12px 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fcs\:text-sh-10:focus {
+  text-shadow: 10px 12px 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-sh-none {
+  text-shadow: none !important;
+}
+
+.hvr\:text-sh-none:hover {
+  text-shadow: none !important;
+}
+
+.fcs\:text-sh-none:focus {
+  text-shadow: none !important;
+}

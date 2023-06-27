@@ -1,0 +1,42 @@
+@use "./../abstracts/" as *;
+
+.btn {
+  border: $borderColor $borderStyle 0.1rem;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  text-align: center;
+  font-family: $sansSerif;
+  padding: 0.35rem 2.5rem;
+
+  &.btn-floating {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle
+  }
+
+  &.btn-floating:before {
+    border-radius: 0
+  }
+
+  &.btn-floating i {
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5rem
+  }
+
+  &.btn-floating.btn-floating-square {
+    border-radius: 5px
+  }
+
+  &.btn-floating.btn-floating-cirlce {
+    border-radius: 50%
+  }
+}
+

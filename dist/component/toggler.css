@@ -1,0 +1,13 @@
+.toggler {
+  position: absolute;
+  font-weight: 900;
+  font-size: 1.25rem;
+  right: 0.8rem;
+  top: 0.6rem;
+  cursor: pointer;
+  content: "x";
+  color: var(--red-100);
+}
+.toggler:hover {
+  opacity: 0.95;
+}

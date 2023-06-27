@@ -1,0 +1,15 @@
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  z-index: 200;
+  background-color: var(--white-100);
+  border-radius: 0.15rem;
+  bottom: 4rem;
+  padding: 0.3rem 0.8rem;
+}
+.tooltip.active {
+  font-size: 0.85rem;
+}
+.tooltip.active {
+  visibility: visible;
+}

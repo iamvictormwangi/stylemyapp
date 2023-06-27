@@ -1,0 +1,1582 @@
+$transitionDuration: 0.15s !default;
+$transitionDelay: 0.05s !default;
+
+$marginBottom: 1rem !default;
+
+$fontSize: 1rem !default;
+$titleSize: 2.5rem !default;
+
+$lineHeight: 1rem;
+
+$sansSerif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  Ubuntu, Cantarell, "Helvetica Neue", sans-serif !default;
+$systemSansSerif: sans-serif;
+$serif: serif !default;
+$systemSerif: serif;
+$monospace: monospace !default;
+$courier: Courier Next, courier, monospace;
+$helvetica: helvetica neue, helvetica, sans-serif;
+$avenir: avenir next, avenir, sans-serif;
+$athelas: athelas, georgia, serif;
+$georgia: georgia, serif;
+$times: times, serif;
+$bodoni: Bodoni MT, serif;
+$calisto: Calisto MT, serif;
+$garamold: garamond, serif;
+$baskerville: baskerville, serif;
+
+$borderRadius: 0.375px;
+$borderWidth: 1.5px !default;
+$borderColor: rgb(0, 0, 0) !default;
+$borderStyle: solid !default;
+
+$mobile-min-width: 10rem !default;
+$mobile-max-width: 37.5rem !default;
+
+$tablet-min-width: 37.505rem !default;
+$tablet-max-width: 75rem !default;
+
+$laptop-min-width: 75.005rem !default;
+$laptop-max-width: 112.5rem !default;
+
+$desktop-min-width: 112.505rem !default;
+
+$wrapper-max-width: 60rem !default;
+
+$easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+$easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+$easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+$easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+$easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+$colors-extra: (
+  corvette: (
+    1: #fef8ee,
+    2: #fdefd7,
+    3: #fad6a5,
+    4: #f7bf7a,
+    5: #f39a44,
+    6: #ef7d20,
+    7: #e16315,
+    8: #ba4b14,
+    9: #943c18,
+    10: #783316,
+  ),
+  pear: (
+    1: #fcfee7,
+    2: #f7fccb,
+    3: #eef99d,
+    4: #def165,
+    5: #c4e21d,
+    6: #adcb17,
+    7: #86a20e,
+    8: #657b10,
+    9: #516212,
+    10: #445314,
+  ),
+  cosmic: (
+    1: #faf5f7,
+    2: #f6edf1,
+    3: #efdbe3,
+    4: #e2bfcd,
+    5: #cf97ad,
+    6: #be7691,
+    7: #a85a73,
+    8: #8f475c,
+    9: #783d4d,
+    10: #653643,
+  ),
+  turquoise: (
+    1: #effef7,
+    2: #d9ffef,
+    3: #b6fcdf,
+    4: #7df8c7,
+    5: #29e89b,
+    6: #15d286,
+    7: #0aaf6d,
+    8: #0c8958,
+    9: #0f6c48,
+    10: #0f583d,
+  ),
+  christine: (
+    1: #fff9eb,
+    2: #fdedc8,
+    3: #fbda8c,
+    4: #f8c051,
+    5: #f7a828,
+    6: #e47f0e,
+    7: #d5630a,
+    8: #b1420c,
+    9: #8f3411,
+    10: #762c11,
+  ),
+  malibu: (
+    1: #f0f9ff,
+    2: #e1f1fd,
+    3: #bce3fb,
+    4: #80cef9,
+    5: #5bc1f5,
+    6: #149de3,
+    7: #077cc2,
+    8: #07639d,
+    9: #0a5482,
+    10: #0e466c,
+  ),
+  fuchsia: (
+    1: #fff2fe,
+    2: #ffe3fe,
+    3: #ffc6fd,
+    4: #ff99f6,
+    5: #ff5def,
+    6: #ff21f2,
+    7: #ff00ff,
+    8: #cf00ca,
+    9: #a900a3,
+    10: #890682,
+  ),
+  charcoal: (
+    1: #f3f7f8,
+    2: #e0eaed,
+    3: #c5d6dc,
+    4: #9cb9c4,
+    5: #6c93a4,
+    6: #517889,
+    7: #466474,
+    8: #3d5361,
+    9: #36454f,
+    10: #323e47,
+  ),
+  chocolate: (
+    1: #fdf7ed,
+    2: #f9e6cc,
+    3: #f2cc95,
+    4: #ecac5d,
+    5: #e79138,
+    6: #d2691e,
+    7: #c5521a,
+    8: #a43819,
+    9: #862c1a,
+    10: #6e2619,
+  ),
+  coral: (
+    1: #fff4ed,
+    2: #ffe5d4,
+    3: #ffc7a8,
+    4: #ffa071,
+    5: #ff7f50,
+    6: #fe4711,
+    7: #ef2d07,
+    8: #c61c08,
+    9: #9d190f,
+    10: #7e1810,
+  ),
+  cream: (
+    1: #fefde8,
+    2: #fffdd0,
+    3: #fff688,
+    4: #ffea44,
+    5: #fed811,
+    6: #eebf04,
+    7: #cd9401,
+    8: #a46904,
+    9: #87520c,
+    10: #734310,
+  ),
+  denim: (
+    1: #eefaff,
+    2: #d9f2ff,
+    3: #bbe9ff,
+    4: #8cddff,
+    5: #56c8ff,
+    6: #2fabff,
+    7: #188df8,
+    8: #1175e4,
+    9: #1560bd,
+    10: #175191,
+  ),
+  desert: (
+    1: #faf7f2,
+    2: #f3ede1,
+    3: #e6d8c2,
+    4: #d6bf9b,
+    5: #c19a6b,
+    6: #b88857,
+    7: #aa754c,
+    8: #8e5f40,
+    9: #734d39,
+    10: #5e4030,
+  ),
+  flame: (
+    1: #fdf5ef,
+    2: #fbe8d9,
+    3: #f6cdb2,
+    4: #f0ac81,
+    5: #e9804e,
+    6: #e25822,
+    7: #d54821,
+    8: #b1351d,
+    9: #8d2d1f,
+    10: #72271c,
+  ),
+  forest-green: (
+    1: #f1fcf1,
+    2: #e0f9df,
+    3: #c2f1c1,
+    4: #92e491,
+    5: #5acf59,
+    6: #34b433,
+    7: #228b22,
+    8: #207521,
+    9: #1e5d1f,
+    10: #1a4d1b,
+  ),
+  gold: (
+    1: #ffffe7,
+    2: #feffc1,
+    3: #fffd86,
+    4: #fff441,
+    5: #ffe60d,
+    6: #ffd700,
+    7: #d19e00,
+    8: #a67102,
+    9: #89580a,
+    10: #74480f,
+  ),
+  khaki: (
+    1: #f9f7f3,
+    2: #f0ede4,
+    3: #e1d9c7,
+    4: #cdc0a4,
+    5: #c3b091,
+    6: #aa8d65,
+    7: #9d7c59,
+    8: #83654b,
+    9: #6b5341,
+    10: #574437,
+  ),
+  olive: (
+    1: #fffae4,
+    2: #fff7c4,
+    3: #fff190,
+    4: #fff050,
+    5: #fef21d,
+    6: #e5de00,
+    7: #b8b800,
+    8: #808000,
+    9: #6c6d07,
+    10: #5a5c0b,
+  ),
+  peach: (
+    1: #fff9ed,
+    2: #fff2d5,
+    3: #ffe5b4,
+    4: #ffcb72,
+    5: #fda93a,
+    6: #fc8e13,
+    7: #ed7209,
+    8: #c4560a,
+    9: #9c4310,
+    10: #7d3911,
+  ),
+  rose: (
+    1: #fff0f9,
+    2: #ffe3f6,
+    3: #ffc6ec,
+    4: #ff98db,
+    5: #ff58c0,
+    6: #ff27a5,
+    7: #ff007f,
+    8: #df0063,
+    9: #b80052,
+    10: #980347,
+  ),
+  ocean: (
+    1: #effaff,
+    2: #def4ff,
+    3: #b6ebff,
+    4: #76ddff,
+    5: #2dcdff,
+    6: #02b8f5,
+    7: #0093d2,
+    8: #0076aa,
+    9: #006994,
+    10: #075173,
+  ),
+  sky-blue: (
+    1: #f2f9fd,
+    2: #e4f2fa,
+    3: #c2e5f5,
+    4: #87ceeb,
+    5: #50b9e0,
+    6: #2aa0cd,
+    7: #1b81ae,
+    8: #17678d,
+    9: #175775,
+    10: #184962,
+  ),
+  sunset: (
+    1: #fef8ee,
+    2: #fdefd7,
+    3: #fad6a5,
+    4: #f7bf7a,
+    5: #f39a44,
+    6: #ef7d20,
+    7: #e16315,
+    8: #ba4b14,
+    9: #943c18,
+    10: #783316,
+  ),
+);
+
+$colors: (
+  pink: (
+    1: #fff1f3,
+    2: #ffe3e7,
+    3: #ffc0cb,
+    4: #ffa2b3,
+    5: #fe6e8b,
+    6: #f83b66,
+    7: #e51951,
+    8: #c20e43,
+    9: #a20f40,
+    10: #8a113c,
+  ),
+  red: (
+    1: #fff0f0,
+    2: #ffdddd,
+    3: #ffc0c0,
+    4: #ff9494,
+    5: #ff5757,
+    6: #ff2323,
+    7: #ff0000,
+    8: #d70000,
+    9: #b10303,
+    10: #920a0a,
+  ),
+  blue: (
+    1: #f0f3ff,
+    2: #e4e9ff,
+    3: #cdd6ff,
+    4: #a6b4ff,
+    5: #7382ff,
+    6: #3b44ff,
+    7: #1614ff,
+    8: #0000ff,
+    9: #0101d6,
+    10: #0303af,
+  ),
+  brown: (
+    1: #fdf3f3,
+    2: #fbe5e5,
+    3: #f9cfcf,
+    4: #f4adad,
+    5: #eb7e7e,
+    6: #de5555,
+    7: #ca3838,
+    8: #a52a2a,
+    9: #8d2727,
+    10: #762626,
+  ),
+  purple: (
+    1: #fcf3ff,
+    2: #f7e3ff,
+    3: #f0ccff,
+    4: #e4a4ff,
+    5: #d46aff,
+    6: #c432ff,
+    7: #b50cff,
+    8: #a100f3,
+    9: #8104bc,
+    10: #6f059e,
+  ),
+  cyan: (
+    1: #edfffe,
+    2: #c0feff,
+    3: #81fbff,
+    4: #3af8ff,
+    5: #00ffff,
+    6: #00e1e2,
+    7: #00b2b7,
+    8: #008c91,
+    9: #006c72,
+    10: #04585d,
+  ),
+  grey: (
+    1: #f7f7f7,
+    2: #e3e3e3,
+    3: #c8c8c8,
+    4: #a4a4a4,
+    5: #808080,
+    6: #666666,
+    7: #515151,
+    8: #434343,
+    9: #383838,
+    10: #313131,
+  ),
+  green: (
+    1: #e7ffe4,
+    2: #c9ffc4,
+    3: #98ff90,
+    4: #56ff50,
+    5: #00ff00,
+    6: #00e606,
+    7: #00b809,
+    8: #008b07,
+    9: #076d0d,
+    10: #0b5c11,
+  ),
+  indigo: (
+    1: #f6f1ff,
+    2: #f1e5ff,
+    3: #e3ceff,
+    4: #d0a7ff,
+    5: #bc76ff,
+    6: #ab3fff,
+    7: #a718ff,
+    8: #9c07fa,
+    9: #8305d2,
+    10: #6c06ac,
+  ),
+  white: (
+    1: #ffffff,
+    2: #efefef,
+    3: #dcdcdc,
+    4: #bdbdbd,
+    5: #989898,
+    6: #7c7c7c,
+    7: #656565,
+    8: #525252,
+    9: #464646,
+    10: #3d3d3d,
+  ),
+  yellow: (
+    1: #fcffe7,
+    2: #f6ffc1,
+    3: #f1ff86,
+    4: #f2ff41,
+    5: #faff0d,
+    6: #fff700,
+    7: #d1b800,
+    8: #a68602,
+    9: #89680a,
+    10: #74540f,
+  ),
+  maroon: (
+    1: #ffeeee,
+    2: #ffdada,
+    3: #ffbbbb,
+    4: #ff8b8b,
+    5: #ff4949,
+    6: #ff1111,
+    7: #ff0000,
+    8: #e70000,
+    9: #be0000,
+    10: #800000,
+  ),
+  orange: (
+    1: #fffcea,
+    2: #fff5c5,
+    3: #ffeb85,
+    4: #ffda46,
+    5: #ffc71b,
+    6: #ffa500,
+    7: #e27c00,
+    8: #bb5502,
+    9: #984208,
+    10: #7c360b,
+  ),
+  teal: (
+    1: #eefffc,
+    2: #c5fffa,
+    3: #8bfff5,
+    4: #4afef0,
+    5: #15ece2,
+    6: #00d0c9,
+    7: #00a8a5,
+    8: #008080,
+    9: #066769,
+    10: #0a5757,
+  ),
+  black: (
+    1: #f7f7f7,
+    2: #e3e3e3,
+    3: #c8c8c8,
+    4: #a4a4a4,
+    5: #818181,
+    6: #666666,
+    7: #515151,
+    8: #434343,
+    9: #383838,
+    10: #313131,
+  ),
+);
+
+$brand-colors: (
+  facebook-old: #1877f2,
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  youtube: #ff0000,
+  linkedin: #0a66c2,
+  instagram: #c32aa3,
+  google: #4285f4,
+  pinterest: #bd081c,
+  vimeo: #1ab7ea,
+  tumblr: #2c4762,
+  snapchat: #fffc00,
+  whatsapp: #25d366,
+  tiktok: #010101,
+  mastadon: #2b90d9,
+  amazon: #ff9900,
+  microsoft: #f35022,
+  medium: #02b875,
+  yahoo: #430297,
+  twitch: #9146ff,
+  soundcloud: #ff5500,
+  spotify: #1ed760,
+  reddit: #ff5700,
+  quora: #aa2200,
+  discord: #5865f2,
+  telegram: #0088cc,
+  github: #171515,
+  gitlab: #171515,
+  hackernews: #ff6600 //newyorktimes,,,
+);
+
+$utility-colors: (
+  success: #48c78e,
+  info: #3e8ed0,
+  warning: #ffe08a,
+  danger: #f14668,
+  muted: #466474,
+  pink: pink,
+  red: pink,
+  blue: pink,
+  brown: pink,
+  purple: pink,
+  cyan: pink,
+  grey: pink,
+  green: pink,
+  indigo: pink,
+  white: pink,
+  yellow: pink,
+  maroon: pink,
+  orange: pink,
+  teal: pink,
+  black: pink,
+);
+
+$breakpoints: [ mobile, tablet, laptop, desktop];
+
+$border-properties: (
+  bd: border-width,
+  bd-t: border-top-width,
+  bd-r: border-right-width,
+  bd-b: border-bottom-width,
+  bd-l: border-left-width,
+  bd-rs: border-radius,
+  bd-t-r-rs: border-top-right-radius,
+  bd-t-l-rs: border-top-left-radius,
+  bd-b-r-rs: border-bottom-right-radius,
+  bd-b-l-rs: border-bottom-left-radius,
+);
+
+$height: (
+  h: height,
+  mih: min-height,
+  mah: max-height,
+);
+
+$height-negative: (
+  -h: height,
+  -mih: min-height,
+  -mah: max-height,
+);
+
+$width: (
+  w: width,
+  miw: min-width,
+  maw: max-width,
+);
+
+$width-negative: (
+  -w: width,
+  -miw: min-width,
+  -maw: max-width,
+);
+
+$directional: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+);
+
+$directional-negative: (
+  -t: top,
+  -r: right,
+  -b: bottom,
+  -l: left,
+);
+
+$margin: (
+  m: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+);
+
+$margin-negative: (
+  -m: margin,
+  -mt: margin-top,
+  -mr: margin-right,
+  -mb: margin-bottom,
+  -ml: margin-left,
+);
+
+$padding: (
+  p: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left,
+);
+
+$padding-negative: (
+  -p: padding,
+  -pt: padding-top,
+  -pr: padding-right,
+  -pb: padding-bottom,
+  -pl: padding-left,
+);
+
+$gap: (
+  gap: gap,
+  gap-x: column-gap,
+  gap-y: row-gap,
+  col-gap: column-gap,
+  row-gap: row-gap,
+);
+
+$gap-negative: (
+  -gap: gap,
+  -gap-x: column-gap,
+  -gap-y: row-gap,
+  -col-gap: column-gap,
+  -row-gap: row-gap,
+);
+
+$typography: (
+  "font-family": (
+    "prefix": "",
+    "values": (
+      sans-serif: $sansSerif,
+      serif: $serif,
+      system-sans-serif: $systemSansSerif,
+      system-serif: $systemSerif,
+      monospace: $monospace,
+      courier: $courier,
+      helvetica: $helvetica,
+      avenir: $avenir,
+      athelas: $athelas,
+      georgia: $georgia,
+      times: $times,
+      bodoni: $bodoni,
+      calisto: $calisto,
+      garamold: $garamold,
+      baskerville: $baskerville,
+    ),
+  ),
+
+  "font-style": (
+    "prefix": "",
+    "values": (
+      italic: italic,
+    ),
+  ),
+
+  "font-size": (
+    "prefix": "fnt",
+    "values": (
+      25\%: 25%,
+      50\%: 50%,
+      75\%: 75%,
+      100\%: 100%,
+      125\%: 125%,
+      150\%: 150%,
+      175\%: 175%,
+      200\%: 200%,
+      225\%: 225%,
+      250\%: 250%,
+      275\%: 275%,
+      300\%: 300%,
+    ),
+  ),
+
+  "font-weight": (
+    "prefix": "fnt-weit",
+    "values": (
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      100: 100,
+      200: 200,
+      300: 300,
+      400: 400,
+      500: 500,
+      600: 600,
+      700: 700,
+      800: 800,
+      900: 900,
+    ),
+  ),
+
+  "text-align": (
+    "prefix": "text",
+    "values": (
+      l: left,
+      r: right,
+      center: center,
+      justify: justify,
+      start: start,
+      end: end,
+    ),
+  ),
+
+  "text-transform": (
+    "prefix": "",
+    "values": (
+      lowercase: lowercase,
+      uppercase: uppercase,
+      capitalize: capitalize,
+      normal-case: none,
+    ),
+  ),
+
+  "text-overflow": (
+    "prefix": "text",
+    "values": (
+      ellipsis: ellipsis,
+      clip: clip,
+    ),
+  ),
+
+  "text-decoration-line": (
+    "prefix": "",
+    "values": (
+      underline: underline,
+      overline: overline,
+      line-through: line-through,
+      no-underline: none,
+    ),
+  ),
+
+  "text-decoration": (
+    "prefix": "",
+    "values": (
+      text-decoration-none: none,
+    ),
+  ),
+
+  "letter-spacing": (
+    "prefix": "ls",
+    "values": (
+      normal: normal,
+      1: -0.05rem,
+      2: -0.025rem,
+      3: 0rem,
+      4: 0.025rem,
+      5: 0.05rem,
+      6: 0.075rem,
+      7: 0.1,
+      8: 0.125rem,
+      9: 0.25rem,
+      10: 0.5rem,
+    ),
+  ),
+
+  "line-break": (
+    "prefix": "lb",
+    "values": (
+      auto: auto,
+      loose: loose,
+      normal: normal,
+      strict: strict,
+      anywhere: anywhere,
+    ),
+  ),
+
+  "line-height": (
+    "prefix": "lh",
+    "values": (
+      normal: normal,
+      10\%: 10%,
+      20\%: 20%,
+      30\%: 30%,
+      40\%: 40%,
+      50\%: 50%,
+      60\%: 60%,
+      70\%: 70%,
+      80\%: 80%,
+      90\%: 90%,
+      100\%: 100%,
+      1: 0.75rem,
+      2: 1rem,
+      3: 1.25rem,
+      4: 1.5rem,
+      5: 1.75rem,
+      6: 2rem,
+      7: 2.25rem,
+      8: 2.5rem,
+      9: 2.75rem,
+      10: 3rem,
+    ),
+  ),
+
+  "hyphens": (
+    "prefix": "hy",
+    "values": (
+      none: none,
+      manual: manual,
+      auto: auto,
+    ),
+  ),
+
+  "white-space": (
+    "prefix": "ws",
+    "values": (
+      normal: normal,
+      nowrap: nowrap,
+      pre: pre,
+      pre-line: pre-line,
+      pre-wrap: pre-wrap,
+      break-spaces: break-spaces,
+    ),
+  ),
+
+  "word-break": (
+    "prefix": "wob",
+    "values": (
+      normal: normal,
+      break-all: break-all,
+      keep-all: keep-all,
+      break-word: break-word,
+    ),
+  ),
+
+  "text-shadow": (
+    "prefix": "text-sh",
+    "values": (
+      1: 0 0 4px 2px rgba(0, 0, 0, 0.2),
+      2: 0 0 8px 2px rgba(0, 0, 0, 0.2),
+      3: 2px 2px 4px 2px rgba(0, 0, 0, 0.2),
+      4: 2px 2px 8px 2 rgba(0, 0, 0, 0.2),
+      5: 4px 4px 8px 0 rgba(0, 0, 0, 0.2),
+      6: 8px 8px 8px 0 rgba(0, 0, 0, 0.2),
+      7: 8px 8px 8px 2px rgba(0, 0, 0, 0.2),
+      8: 10px 12px 8px 2px rgba(0, 0, 0, 0.2),
+      9: 10px 12px 8px 3px rgba(0, 0, 0, 0.2),
+      10: 10px 12px 8px 3px rgba(0, 0, 0, 0.2),
+      none: none,
+    ),
+  ),
+);
+
+$utilities: (
+  "list-style": (
+    "prefix": "list",
+    "values": (
+      unstyled: unstyled,
+      disc: disc,
+      decimal: decimal,
+      cirlce: cirlce,
+      square: square,
+    ),
+  ),
+
+  "opacity": (
+    "prefix": "op",
+    "values": (
+      0\.1: 0.1,
+      0\.15: 0.15,
+      0\.2: 0.2,
+      0\.25: 0.25,
+      0\.3: 0.3,
+      0\.35: 0.35,
+      0\.4: 0.4,
+      0\.45: 0.45,
+      0\.5: 0.5,
+      0\.55: 0.55,
+      0\.6: 0.6,
+      0\.65: 0.65,
+      0\.7: 0.7,
+      0\.75: 0.75,
+      0\.8: 0.8,
+      0\.85: 0.85,
+      0\.9: 0.9,
+      0\.95: 0.95,
+      1: 1,
+    ),
+  ),
+
+  "border": (
+    "prefix": "bd",
+    "values": (
+      default: $borderColor $borderWidth $borderStyle,
+      none: none,
+    ),
+  ),
+
+  "border-style": (
+    "prefix": "bd",
+    "values": (
+      dotted: dotted,
+      dashed: dashed,
+      solid: solid,
+      groove: groove,
+      ridge: ridge,
+      double: double,
+      inset: inset,
+      outset: outset,
+    ),
+  ),
+
+  "border-radius": (
+    "prefix": "bd-rs",
+    "values": (
+      circle: 50%,
+      oval: 35%,
+    ),
+  ),
+
+  "outline": (
+    "prefix": "ot",
+    "values": (
+      default: 1px solid,
+      none: none,
+      transparent: 1px solid transparent,
+    ),
+  ),
+
+  "outline-style": (
+    "prefix": "ot",
+    "values": (
+      dotted: dotted,
+      dashed: dashed,
+      solid: solid,
+      groove: groove,
+      ridge: ridge,
+      double: double,
+      inset: inset,
+      outset: outset,
+    ),
+  ),
+
+  "cursor": (
+    "prefix": "cu",
+    "values": (
+      auto: auto,
+      default: default,
+      pointer: pointer,
+      wait: wait,
+      text: text,
+      move: move,
+      none: none,
+      help: help,
+      crosshair: crosshair,
+      progress: progress,
+      not-allowed: not-allowed,
+      zoom-in: zoom-in,
+      zoom-out: zoom-out,
+    ),
+  ),
+
+  "pointer-events": (
+    "prefix": "pe",
+    "values": (
+      none: none,
+      auto: auto,
+    ),
+  ),
+
+  "touch-actions": (
+    "prefix": "ta",
+    "values": (
+      none: none,
+      auto: auto,
+      pan-x: pan-x,
+      pan-l: pan-left,
+      pan-r: pan-right,
+      pan-y: pan-y,
+      pan-down: pan-down,
+      pinch-zoom: pinch-zoom,
+      manipulation: manipulation,
+    ),
+  ),
+
+  "float": (
+    "prefix": "fl",
+    "values": (
+      r: right,
+      l: left,
+      none: none,
+    ),
+  ),
+
+  "clear": (
+    "prefix": "cl",
+    "values": (
+      fix: both,
+      both: both,
+      l: left,
+      r: right,
+      none: none,
+    ),
+  ),
+
+  "overflow": (
+    "prefix": "ov",
+    "values": (
+      auto: auto,
+      scroll: scroll,
+      hidden: hidden,
+      visible: visible,
+    ),
+  ),
+
+  "overflow-y": (
+    "prefix": "ov-y",
+    "values": (
+      auto: auto,
+      scroll: scroll,
+      hidden: hidden,
+      visible: visible,
+    ),
+  ),
+
+  "overflow-x": (
+    "prefix": "ov-x",
+    "values": (
+      auto: auto,
+      scroll: scroll,
+      hidden: hidden,
+      visible: visible,
+    ),
+  ),
+
+  "display": (
+    "prefix": "",
+    "values": (
+      block: block,
+      inline: inline,
+      inline-block: inline-block,
+      flex: flex,
+      inline-flex: inline-flex,
+      table: table,
+      inline-table: inline-table,
+      table-caption: table-caption,
+      none: none,
+      grid: grid,
+    ),
+  ),
+
+  "flex-wrap": (
+    "prefix": "flex",
+    "values": (
+      wrap: wrap,
+      no-wrap: no-wrap,
+      wrap-reverse: wrap-reverse,
+    ),
+  ),
+
+  "caption-side": (
+    "prefix": "cs",
+    "values": (
+      t: top,
+      b: bottom,
+      block-start: block-start,
+      block-end: block-end,
+      inline-start: inline-start,
+      inline-end: inline-end,
+      revert: revert,
+      revert-layer: revert-layer,
+      unset: unset,
+    ),
+  ),
+
+  "empty-cells": (
+    "prefix": "ec",
+    "values": (
+      show: show,
+      hide: hide,
+    ),
+  ),
+
+  "isolation": (
+    "prefix": "",
+    "values": (
+      isolate: isolate,
+      isolation-auto: auto,
+    ),
+  ),
+
+  "flex-direction": (
+    "prefix": "flex",
+    "values": (
+      row: row,
+      row-reverse: row-reverse,
+      col: col,
+      col-reverse: col-reverse,
+    ),
+  ),
+
+  "justify-content": (
+    "prefix": "content",
+    "values": (
+      center: center,
+      space-between: space-between,
+      space-evenly: space-evenly,
+      space-around: space-around,
+      flex-start: flex-start,
+      flex-end: flex-end,
+      stretch: stretch,
+    ),
+  ),
+
+  "align-items": (
+    "prefix": "items",
+    "values": (
+      center: center,
+      start: start,
+      end: end,
+      space-between: space-between,
+      space-evenly: space-evenly,
+      space-around: space-around,
+      flex-start: flex-start,
+      flex-end: flex-end,
+    ),
+  ),
+
+  "object-contain": (
+    "prefix": "obj",
+    "values": (
+      contain: contain,
+      cover: cover,
+      fill: fill,
+      none: none,
+      scale-down: scale-down,
+    ),
+  ),
+
+  "object-position": (
+    "prefix": "obj",
+    "values": (
+      b: bottom,
+      center: center,
+      l: left,
+      l-b: left bottom,
+      l-t: left top,
+      r: right,
+      r-b: right bottom,
+      r-t: right top,
+      t: top,
+    ),
+  ),
+
+  "align-self": (
+    "prefix": "self",
+    "values": (
+      center: center,
+      start: start,
+      end: end,
+      space-between: space-between,
+      space-evenly: space-evenly,
+      space-around: space-around,
+      flex-start: flex-start,
+      flex-end: flex-end,
+    ),
+  ),
+
+  "order": (
+    "prefix": "od",
+    "values": (
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+      6: 6,
+      7: 7,
+      8: 8,
+      9: 9,
+      10: 10,
+      11: 11,
+      12: 12,
+      13: 13,
+      14: 14,
+      15: 15,
+      16: 16,
+      17: 17,
+      18: 18,
+      19: 19,
+      20: 20,
+      21: 21,
+      22: 22,
+      23: 23,
+      24: 24,
+      last: 99999,
+    ),
+  ),
+
+  "z-index": (
+    "prefix": "z",
+    "values": (
+      0: 0,
+      1: 50,
+      2: 100,
+      3: 200,
+      4: 400,
+      5: 600,
+      6: 800,
+      7: 1000,
+      8: 1200,
+      9: 1500,
+      10: 100000,
+      auto: auto,
+    ),
+  ),
+
+  "position": (
+    "prefix": "",
+    "values": (
+      relative: relative,
+      absolute: absolute,
+      fixed: fixed,
+      sticky: sticky,
+      static: static,
+    ),
+  ),
+
+  "visibility": (
+    "prefix": "",
+    "values": (
+      visible: visible,
+      hidden: hidden,
+      collapse: collapse,
+    ),
+  ),
+
+  "scroll-behavior": (
+    "prefix": "scroll",
+    "values": (
+      smooth: smooth,
+      auto: auto,
+    ),
+  ),
+
+  "vertical-align": (
+    "prefix": "v-align",
+    "values": (
+      baseline: baseline,
+      top: top,
+      middle: middle,
+      b: bottom,
+      text-t: text-top,
+      text-b: text-bottom,
+      sub: sub,
+      super: super,
+    ),
+  ),
+
+  "aspect-ratio": (
+    "prefix": "ar",
+    "values": (
+      auto: auto,
+      square: calc(1 / 1),
+      video: calc(16 / 9),
+    ),
+  ),
+
+  "break-after": (
+    "prefix": "ba",
+    "values": (
+      auto: auto,
+      avoid: avoid,
+      all: all,
+      avoid-page: avoid-page,
+      page: page,
+      l: left,
+      r: right,
+      column: column,
+    ),
+  ),
+
+  "break-before": (
+    "prefix": "bb",
+    "values": (
+      auto: auto,
+      avoid: avoid,
+      all: all,
+      avoid-page: avoid-page,
+      page: page,
+      l: left,
+      r: right,
+      column: column,
+    ),
+  ),
+
+  "box-sizing": (
+    "prefix": "",
+    "values": (
+      border-box: border-box,
+      content-box: content-box,
+    ),
+  ),
+
+  "background-attachment": (
+    "prefix": "bg",
+    "values": (
+      fixed: fixed,
+      local: local,
+      scroll: scroll,
+    ),
+  ),
+
+  "background-repeat": (
+    "prefix": "bg",
+    "values": (
+      repeat: repeat,
+      no-repeat: no-repeat,
+      repeat-x: repeat-x,
+      repeat-y: repeat-y,
+      repeat-round: repeat-round,
+      repeat-space: repeat-space,
+    ),
+  ),
+
+  "background-size": (
+    "prefix": "bg",
+    "values": (
+      auto: auto,
+      cover: cover,
+      contain: contain,
+    ),
+  ),
+
+  "filter": (
+    "prefix": "",
+    "values": (
+      blur-none: blur(0),
+      blur-1: blur(4px),
+      blur-2: blur(8px),
+      blur-3: blur(12px),
+      blur-4: blur(16px),
+      blur-5: blur(24px),
+      blur-6: blur(32px),
+      blur-7: blur(38px),
+      blur-8: blur(46px),
+      blur-9: blur(56px),
+      blur-10: blur(70px),
+      brightness-1: brightness(0),
+      brightness-2: brightness(0.5),
+      brightness-3: brightness(0.75),
+      brightness-4: brightness(1),
+      brightness-5: brightness(1.25),
+      brightness-6: brightness(1.5),
+      brightness-7: brightness(1.75),
+      brightness-8: brightness(2),
+      brightness-9: brightness(2.5),
+      brightness-10: brightness(3),
+      contrast-1: contrast(0),
+      contrast-2: contrast(0.5),
+      contrast-3: contrast(0.75),
+      contrast-4: contrast(1),
+      contrast-5: contrast(1.25),
+      contrast-6: contrast(1.5),
+      contrast-7: contrast(1.75),
+      contrast-8: contrast(2),
+      contrast-9: contrast(2.5),
+      contrast-10: contrast(3),
+    ),
+  ),
+
+  "box-shadow": (
+    "prefix": "sh",
+    "values": (
+      1: 0 0 4px 2px rgba(0, 0, 0, 0.2),
+      2: 0 0 8px 2px rgba(0, 0, 0, 0.2),
+      3: 2px 2px 4px 2px rgba(0, 0, 0, 0.2),
+      4: 2px 2px 8px 2 rgba(0, 0, 0, 0.2),
+      5: 4px 4px 8px 0 rgba(0, 0, 0, 0.2),
+      6: 8px 8px 8px 0 rgba(0, 0, 0, 0.2),
+      7: 8px 8px 8px 2px rgba(0, 0, 0, 0.2),
+      8: 10px 12px 8px 2px rgba(0, 0, 0, 0.2),
+      9: 10px 12px 8px 3px rgba(0, 0, 0, 0.2),
+      10: 10px 12px 8px 3px rgba(0, 0, 0, 0.2),
+      none: none,
+      inset-1: inset 0 0 4px 2px rgba(0, 0, 0, 0.2),
+      inset-2: inset 0 0 8px 2px rgba(0, 0, 0, 0.2),
+      inset-3: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.2),
+      inset-4: inset 2px 2px 8px 2 rgba(0, 0, 0, 0.2),
+      inset-5: inset 4px 4px 8px 0 rgba(0, 0, 0, 0.2),
+      inset-6: inset 8px 8px 8px 0 rgba(0, 0, 0, 0.2),
+      inset-7: inset 8px 8px 8px 2px rgba(0, 0, 0, 0.2),
+      inset-8: inset 10px 12px 8px 2px rgba(0, 0, 0, 0.2),
+      inset-9: inset 10px 12px 8px 3px rgba(0, 0, 0, 0.2),
+      inset-10: inset 10px 12px 8px 3px rgba(0, 0, 0, 0.2),
+      inset-none: inset none,
+    ),
+  ),
+
+   "appearance": (
+    "prefix": "ap",
+    "values": (
+      none: none,
+      auto: auto,
+      textfield: textfield,
+      button: button,
+      searchfield: searchfield,
+      textarea: textarea,
+      push-button: push-button,
+      slider-horizontal: slider-horizontal,
+      chechbox: chechbox,
+      radio: radio,
+      square-button: square-button,
+      menulist: menulist,
+      listbox: listbox,
+      meter: meter,
+      progressbar: progressbar,
+    ),
+  ),
+);
+
+$animation: (
+  "transition-property": (
+    "prefix": "transition",
+    "values": (
+      all: all,
+      color: color,
+      bg: background-color,
+      op: opacity,
+      shadow: box-shadow,
+      transform: transform,
+      none: none,
+    ),
+  ),
+
+  "animation-iteration-count": (
+    "prefix": "",
+    "values": (
+      once: 1,
+      twice: 2,
+      thrice: 3,
+      infinite: infinite,
+    ),
+  ),
+
+  "transition-timing-function": (
+    "prefix": "",
+    "values": (
+      linear: linear,
+      ease-in: ease-in,
+      ease-out: ease-out,
+      ease-in-out: ease-in-out,
+      step-start: step-start,
+      step-end: step-end,
+      ease-in-sine: $easeInSine,
+      ease-out-sine: $easeOutSine,
+      ease-in-out-sine: $easeInOutSine,
+      ease-in-quad: $easeInQuad,
+      ease-out-quad: $easeOutQuad,
+      ease-in-out-quad: $easeInOutQuad,
+      ease-in-cubic: $easeInCubic,
+      ease-out-cubic: $easeOutCubic,
+      ease-in-out-cubic: $easeInOutCubic,
+      ease-in-quart: $easeInQuart,
+      ease-out-quart: $easeOutQuart,
+      ease-in-out-quart: $easeInOutQuart,
+      ease-in-quint: $easeInQuint,
+      ease-out-quint: $easeOutQuint,
+      ease-in-out-quint: $easeInOutQuint,
+      ease-in-expo: $easeInExpo,
+      ease-out-expo: $easeOutExpo,
+      ease-in-out-expo: $easeInOutExpo,
+      ease-in-circle: $easeInCirc,
+      ease-out-circle: $easeOutCirc,
+      ease-in-out-circle: $easeInOutCirc,
+    ),
+  ),
+
+
+
+  "animation-timing-function": (
+    "prefix": "",
+    "values": (
+      linear: linear,
+      ease-in: ease-in,
+      ease-out: ease-out,
+      ease-in-out: ease-in-out,
+      step-start: step-start,
+      step-end: step-end,
+      ease-in-sine: $easeInSine,
+      ease-out-sine: $easeOutSine,
+      ease-in-out-sine: $easeInOutSine,
+      ease-in-quad: $easeInQuad,
+      ease-out-quad: $easeOutQuad,
+      ease-in-out-quad: $easeInOutQuad,
+      ease-in-cubic: $easeInCubic,
+      ease-out-cubic: $easeOutCubic,
+      ease-in-out-cubic: $easeInOutCubic,
+      ease-in-quart: $easeInQuart,
+      ease-out-quart: $easeOutQuart,
+      ease-in-out-quart: $easeInOutQuart,
+      ease-in-quint: $easeInQuint,
+      ease-out-quint: $easeOutQuint,
+      ease-in-out-quint: $easeInOutQuint,
+      ease-in-expo: $easeInExpo,
+      ease-out-expo: $easeOutExpo,
+      ease-in-out-expo: $easeInOutExpo,
+      ease-in-circle: $easeInCirc,
+      ease-out-circle: $easeOutCirc,
+      ease-in-out-circle: $easeInOutCirc,
+    ),
+  ),
+
+  "animation-direction": (
+    "prefix": "",
+    "values": (
+      normal: normal,
+      reverse: reverse,
+      alternate: alternate,
+      alternate-reverse: alternate-reverse,
+    ),
+  ),
+
+  "will-change": (
+    "prefix": "will-change",
+    "values": (
+      auto: auto,
+      scroll-position: scroll-position,
+      contents: contents,
+      transform: transform,
+    ),
+  )
+)

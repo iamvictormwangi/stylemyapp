@@ -1,0 +1,7 @@
+@use "./../abstracts/" as *;
+
+.message {
+  & .message-content {
+    padding: 1rem .8rem;
+  }
+}

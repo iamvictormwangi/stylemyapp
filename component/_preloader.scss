@@ -1,0 +1,14 @@
+@use "./../abstracts/" as *;
+
+.preloader {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  background-color: var(--black-1);
+  height: 150vh;
+  width: 150vw;
+  overflow: hidden
+}
+
+
+

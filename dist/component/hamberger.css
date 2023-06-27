@@ -1,0 +1,15 @@
+.hamberger {
+  cursor: pointer;
+}
+.hamberger .hamberger-bar {
+  background-color: var(--black-100);
+  height: 2px;
+  width: 1.7rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.hamberger .hamberger-bar.hamberger-bar-short {
+  width: 1.3rem !important;
+}
+.hamberger .hamberger-bar:last-child {
+  margin-bottom: 0 !important;
+}

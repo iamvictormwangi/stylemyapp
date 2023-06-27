@@ -1,0 +1,132 @@
+@use "./../abstracts/" as *;
+
+.text-link {
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.5s ease;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.text-base {
+  line-height: $lineHeight;
+  font-size: $fontSize;
+}
+
+/* Headings */
+
+// h1
+
+h1,
+.h1,
+.title {
+  font-size: $titleSize;
+}
+
+// h2
+
+h2,
+.h2,
+.subtitle {
+  font-size: calc($titleSize - 0.25rem);
+}
+
+// h3
+
+h3,
+.h3 {
+  font-size: calc($titleSize - 0.5rem);
+}
+
+// h4
+
+h4,
+.h4 {
+  font-size: calc($titleSize - 0.75rem);
+}
+
+// h5
+
+h5,
+.h5 {
+  font-size: calc($titleSize - 1rem);
+}
+
+// h6
+
+h6,
+.h6 {
+  font-size: calc($titleSize - 1.25rem);
+}
+
+@media only screen and (max-width: 45rem) {
+  h1,
+  .h1,
+  .title {
+    font-size: calc($titleSize - 0.5rem);
+  }
+
+  h2,
+  .h2,
+  .subtitle {
+    font-size: calc($titleSize - 0.75rem);
+  }
+
+  h3,
+  .h3 {
+    font-size: calc($titleSize - 1.25rem);
+  }
+
+  h4,
+  .h4 {
+    font-size: calc($titleSize - 1rem);
+  }
+
+  h5,
+  .h5 {
+    font-size: calc($titleSize - 1.25rem);
+  }
+
+  h6,
+  .h6 {
+    font-size: calc($titleSize - 1.25rem);
+  }
+}
+
+@each $property, $map in $typography {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $k, $v in $values {
+    @if $prefix == "" {
+      .#{$prefix}#{$k} {
+        #{$property}: $v !important;
+      }
+      .hvr\:#{$prefix}#{$k}:hover {
+        #{$property}: $v !important;
+      }
+      .fcs\:#{$prefix}#{$k}:focus {
+        #{$property}: $v !important;
+      }
+    } @else {
+      .#{$prefix}-#{$k} {
+        #{$property}: $v !important;
+      }
+      .hvr\:#{$prefix}-#{$k}:hover {
+        #{$property}: $v !important;
+      }
+      .fcs\:#{$prefix}-#{$k}:focus {
+        #{$property}: $v !important;
+      }
+    }
+  }
+}
+

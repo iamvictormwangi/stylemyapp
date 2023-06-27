@@ -1,0 +1,17 @@
+.dropdown-relative {
+  position: relative;
+}
+.dropdown-relative .dropdown {
+  position: absolute !important;
+  top: calc(100% + 0.45rem);
+  pointer-events: none;
+  display: none;
+  opacity: 0;
+}
+.dropdown-relative .dropdown.dropdown-content {
+  padding: 1rem 0.8rem;
+}
+.dropdown-relative .dropdown.active {
+  opacity: 1 !important;
+  pointer-events: auto;
+}

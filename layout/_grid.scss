@@ -1,0 +1,310 @@
+@use "./../abstracts/" as *;
+@use "sass:math";
+
+@for $i from 1 to 25 {
+  .grid-cols-#{$i} {
+    grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+  }
+}
+
+@for $i from 1 to 25 {
+  .grid-rows-#{$i} {
+    grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+  }
+}
+
+@for $i from 1 to 161 {
+  @if $i < 40 {
+    .grid-col-auto-fit-#{$i} {
+      grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+    }
+    .grid-col-auto-fill-#{$i} {
+      grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+    }
+  } @else {
+    .grid-col-auto-fit-#{$i} {
+      grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+    }
+    .grid-col-auto-fill-#{$i} {
+      grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+    }
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @if $breakpoint == "mobile" {
+    @media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+
+      @for $i from 1 to 25 {
+        .\@mobile\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@mobile\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@mobile\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@mobile\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@mobile\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@mobile\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+
+    }
+
+  } @else if $breakpoint == "tablet" {
+
+    @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+
+      @for $i from 1 to 25 {
+        .\@tablet\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@tablet\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@tablet\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@tablet\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@tablet\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@tablet\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $tablet-min-width) {
+
+      @for $i from 1 to 25 {
+        .\@tablet-up\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@tablet-up\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@tablet-up\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@tablet-up\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@tablet-up\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@tablet-up\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $tablet-max-width) {
+
+      @for $i from 1 to 25 {
+        .\@tablet-down\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@tablet-down\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@tablet-down\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@tablet-down\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@tablet-down\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@tablet-down\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+    }
+
+  } @else if $breakpoint == "laptop" {
+
+    @media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width) {
+
+      @for $i from 1 to 25 {
+        .\@laptop\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@laptop\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@laptop\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@laptop\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@laptop\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@laptop\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $laptop-min-width) {
+
+      @for $i from 1 to 25 {
+        .\@laptop-up\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@laptop-up\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@laptop-up\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@laptop-up\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@laptop-up\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@laptop-up\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $laptop-max-width) {
+
+      @for $i from 1 to 25 {
+        .\@laptop-down\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@laptop-down\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@laptop-down\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@laptop-down\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@laptop-down\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@laptop-down\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+    }
+
+  } @else if $breakpoint == "desktop" {
+
+    @media screen and (min-width: $desktop-min-width) {
+
+      @for $i from 1 to 25 {
+        .\@desktop\:grid-cols-#{$i} {
+          grid-template-columns: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 25 {
+        .\@desktop\:grid-rows-#{$i} {
+          grid-template-rows: repeat($i, minmax(0, 1fr)) !important
+        }
+      }
+
+      @for $i from 1 to 161 {
+        @if $i < 40 {
+          .\@desktop\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.125rem, 1fr)) !important
+          }
+          .\@desktop\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.125rem, 1fr)) !important
+          }
+        } @else {
+          .\@desktop\:grid-col-auto-fit-#{$i} {
+            grid-template-columns: repeat(auto-fit, minmax($i * 0.25rem, 1fr)) !important
+          }
+          .\@desktop\:grid-col-auto-fill-#{$i} {
+            grid-template-columns: repeat(auto-fill, minmax($i * 0.25rem, 1fr)) !important
+          }
+        }
+      }
+    }
+  }
+}
+

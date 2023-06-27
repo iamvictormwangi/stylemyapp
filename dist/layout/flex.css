@@ -1,0 +1,1061 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1-of-12 {
+  width: 8.3333333333% !important;
+}
+
+.col-2-of-12 {
+  width: 16.6666666667% !important;
+}
+
+.col-3-of-12 {
+  width: 25% !important;
+}
+
+.col-4-of-12 {
+  width: 33.3333333333% !important;
+}
+
+.col-5-of-12 {
+  width: 41.6666666667% !important;
+}
+
+.col-6-of-12 {
+  width: 50% !important;
+}
+
+.col-7-of-12 {
+  width: 58.3333333333% !important;
+}
+
+.col-8-of-12 {
+  width: 66.6666666667% !important;
+}
+
+.col-9-of-12 {
+  width: 75% !important;
+}
+
+.col-10-of-12 {
+  width: 83.3333333333% !important;
+}
+
+.col-11-of-12 {
+  width: 91.6666666667% !important;
+}
+
+.col-12-of-12 {
+  width: 100% !important;
+}
+
+.col-1-of-24 {
+  width: 4.1666666667% !important;
+}
+
+.col-2-of-24 {
+  width: 8.3333333333% !important;
+}
+
+.col-3-of-24 {
+  width: 12.5% !important;
+}
+
+.col-4-of-24 {
+  width: 16.6666666667% !important;
+}
+
+.col-5-of-24 {
+  width: 20.8333333333% !important;
+}
+
+.col-6-of-24 {
+  width: 25% !important;
+}
+
+.col-7-of-24 {
+  width: 29.1666666667% !important;
+}
+
+.col-8-of-24 {
+  width: 33.3333333333% !important;
+}
+
+.col-9-of-24 {
+  width: 37.5% !important;
+}
+
+.col-10-of-24 {
+  width: 41.6666666667% !important;
+}
+
+.col-11-of-24 {
+  width: 45.8333333333% !important;
+}
+
+.col-12-of-24 {
+  width: 50% !important;
+}
+
+.col-13-of-24 {
+  width: 54.1666666667% !important;
+}
+
+.col-14-of-24 {
+  width: 58.3333333333% !important;
+}
+
+.col-15-of-24 {
+  width: 62.5% !important;
+}
+
+.col-16-of-24 {
+  width: 66.6666666667% !important;
+}
+
+.col-17-of-24 {
+  width: 70.8333333333% !important;
+}
+
+.col-18-of-24 {
+  width: 75% !important;
+}
+
+.col-19-of-24 {
+  width: 79.1666666667% !important;
+}
+
+.col-20-of-24 {
+  width: 83.3333333333% !important;
+}
+
+.col-21-of-24 {
+  width: 87.5% !important;
+}
+
+.col-22-of-24 {
+  width: 91.6666666667% !important;
+}
+
+.col-23-of-24 {
+  width: 95.8333333333% !important;
+}
+
+.col-24-of-24 {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 10rem) and (max-width: 37.5rem) {
+  .\@mobile\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@mobile\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@mobile\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@mobile\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@mobile\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@mobile\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@mobile\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@mobile\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@mobile\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@mobile\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@mobile\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@mobile\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@mobile\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@mobile\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@mobile\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@mobile\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@mobile\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@mobile\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@mobile\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@mobile\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@mobile\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@mobile\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@mobile\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@mobile\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@mobile\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@mobile\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@mobile\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@mobile\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@mobile\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@mobile\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@mobile\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@mobile\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@mobile\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@mobile\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@mobile\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@mobile\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@mobile\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 37.505rem) and (max-width: 75rem) {
+  .\@tablet\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@tablet\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@tablet\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@tablet\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@tablet\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@tablet\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@tablet\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@tablet\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@tablet\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@tablet\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@tablet\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@tablet\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@tablet\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@tablet\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@tablet\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@tablet\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@tablet\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@tablet\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@tablet\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@tablet\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@tablet\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@tablet\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@tablet\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@tablet\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@tablet\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@tablet\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@tablet\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@tablet\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@tablet\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@tablet\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@tablet\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@tablet\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@tablet\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@tablet\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@tablet\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@tablet\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@tablet\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 37.505rem) {
+  .\@tablet-up\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@tablet-up\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@tablet-up\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@tablet-up\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@tablet-up\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@tablet-up\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@tablet-up\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@tablet-up\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@tablet-up\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@tablet-up\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@tablet-up\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@tablet-up\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@tablet-up\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@tablet-up\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@tablet-up\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@tablet-up\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@tablet-up\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@tablet-up\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@tablet-up\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@tablet-up\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@tablet-up\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@tablet-up\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@tablet-up\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@tablet-up\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@tablet-up\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@tablet-up\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@tablet-up\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@tablet-up\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@tablet-up\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@tablet-up\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@tablet-up\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@tablet-up\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@tablet-up\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@tablet-up\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@tablet-up\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@tablet-up\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@tablet-up\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .\@tablet-down\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@tablet-down\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@tablet-down\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@tablet-down\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@tablet-down\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@tablet-down\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@tablet-down\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@tablet-down\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@tablet-down\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@tablet-down\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@tablet-down\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@tablet-down\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@tablet-down\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@tablet-down\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@tablet-down\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@tablet-down\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@tablet-down\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@tablet-down\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@tablet-down\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@tablet-down\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@tablet-down\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@tablet-down\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@tablet-down\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@tablet-down\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@tablet-down\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@tablet-down\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@tablet-down\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@tablet-down\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@tablet-down\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@tablet-down\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@tablet-down\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@tablet-down\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@tablet-down\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@tablet-down\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@tablet-down\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@tablet-down\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@tablet-down\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 75.005rem) and (max-width: 112.5rem) {
+  .\@laptop\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@laptop\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@laptop\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@laptop\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@laptop\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@laptop\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@laptop\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@laptop\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@laptop\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@laptop\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@laptop\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@laptop\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@laptop\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@laptop\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@laptop\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@laptop\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@laptop\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@laptop\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@laptop\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@laptop\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@laptop\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@laptop\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@laptop\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@laptop\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@laptop\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@laptop\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@laptop\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@laptop\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@laptop\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@laptop\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@laptop\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@laptop\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@laptop\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@laptop\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@laptop\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@laptop\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@laptop\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 75.005rem) {
+  .\@laptop-up\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@laptop-up\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@laptop-up\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@laptop-up\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@laptop-up\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@laptop-up\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@laptop-up\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@laptop-up\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@laptop-up\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@laptop-up\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@laptop-up\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@laptop-up\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@laptop-up\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@laptop-up\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@laptop-up\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@laptop-up\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@laptop-up\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@laptop-up\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@laptop-up\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@laptop-up\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@laptop-up\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@laptop-up\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@laptop-up\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@laptop-up\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@laptop-up\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@laptop-up\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@laptop-up\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@laptop-up\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@laptop-up\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@laptop-up\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@laptop-up\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@laptop-up\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@laptop-up\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@laptop-up\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@laptop-up\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@laptop-up\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@laptop-up\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 112.5rem) {
+  .\@laptop-down\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@laptop-down\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@laptop-down\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@laptop-down\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@laptop-down\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@laptop-down\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@laptop-down\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@laptop-down\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@laptop-down\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@laptop-down\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@laptop-down\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@laptop-down\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@laptop-down\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@laptop-down\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@laptop-down\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@laptop-down\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@laptop-down\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@laptop-down\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@laptop-down\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@laptop-down\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@laptop-down\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@laptop-down\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@laptop-down\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@laptop-down\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@laptop-down\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@laptop-down\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@laptop-down\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@laptop-down\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@laptop-down\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@laptop-down\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@laptop-down\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@laptop-down\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@laptop-down\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@laptop-down\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@laptop-down\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@laptop-down\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@laptop-down\:col-24-of-24 {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 112.505rem) {
+  .\@desktop\:row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .\@desktop\:col-1-of-12 {
+    width: 8.3333333333% !important;
+  }
+  .\@desktop\:col-2-of-12 {
+    width: 16.6666666667% !important;
+  }
+  .\@desktop\:col-3-of-12 {
+    width: 25% !important;
+  }
+  .\@desktop\:col-4-of-12 {
+    width: 33.3333333333% !important;
+  }
+  .\@desktop\:col-5-of-12 {
+    width: 41.6666666667% !important;
+  }
+  .\@desktop\:col-6-of-12 {
+    width: 50% !important;
+  }
+  .\@desktop\:col-7-of-12 {
+    width: 58.3333333333% !important;
+  }
+  .\@desktop\:col-8-of-12 {
+    width: 66.6666666667% !important;
+  }
+  .\@desktop\:col-9-of-12 {
+    width: 75% !important;
+  }
+  .\@desktop\:col-10-of-12 {
+    width: 83.3333333333% !important;
+  }
+  .\@desktop\:col-11-of-12 {
+    width: 91.6666666667% !important;
+  }
+  .\@desktop\:col-12-of-12 {
+    width: 100% !important;
+  }
+  .\@desktop\:col-1-of-24 {
+    width: 4.1666666667% !important;
+  }
+  .\@desktop\:col-2-of-24 {
+    width: 8.3333333333% !important;
+  }
+  .\@desktop\:col-3-of-24 {
+    width: 12.5% !important;
+  }
+  .\@desktop\:col-4-of-24 {
+    width: 16.6666666667% !important;
+  }
+  .\@desktop\:col-5-of-24 {
+    width: 20.8333333333% !important;
+  }
+  .\@desktop\:col-6-of-24 {
+    width: 25% !important;
+  }
+  .\@desktop\:col-7-of-24 {
+    width: 29.1666666667% !important;
+  }
+  .\@desktop\:col-8-of-24 {
+    width: 33.3333333333% !important;
+  }
+  .\@desktop\:col-9-of-24 {
+    width: 37.5% !important;
+  }
+  .\@desktop\:col-10-of-24 {
+    width: 41.6666666667% !important;
+  }
+  .\@desktop\:col-11-of-24 {
+    width: 45.8333333333% !important;
+  }
+  .\@desktop\:col-12-of-24 {
+    width: 50% !important;
+  }
+  .\@desktop\:col-13-of-24 {
+    width: 54.1666666667% !important;
+  }
+  .\@desktop\:col-14-of-24 {
+    width: 58.3333333333% !important;
+  }
+  .\@desktop\:col-15-of-24 {
+    width: 62.5% !important;
+  }
+  .\@desktop\:col-16-of-24 {
+    width: 66.6666666667% !important;
+  }
+  .\@desktop\:col-17-of-24 {
+    width: 70.8333333333% !important;
+  }
+  .\@desktop\:col-18-of-24 {
+    width: 75% !important;
+  }
+  .\@desktop\:col-19-of-24 {
+    width: 79.1666666667% !important;
+  }
+  .\@desktop\:col-20-of-24 {
+    width: 83.3333333333% !important;
+  }
+  .\@desktop\:col-21-of-24 {
+    width: 87.5% !important;
+  }
+  .\@desktop\:col-22-of-24 {
+    width: 91.6666666667% !important;
+  }
+  .\@desktop\:col-23-of-24 {
+    width: 95.8333333333% !important;
+  }
+  .\@desktop\:col-24-of-24 {
+    width: 100% !important;
+  }
+}

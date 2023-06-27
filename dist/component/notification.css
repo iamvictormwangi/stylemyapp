@@ -1,0 +1,16 @@
+.notification * {
+  margin-bottom: 0;
+}
+
+.notification {
+  min-height: 3rem;
+  width: 20rem;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  z-index: 1500;
+  opacity: 0.85;
+}
+.notification .notification-content {
+  padding: 1rem 0.8rem;
+}
